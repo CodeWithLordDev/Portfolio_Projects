@@ -11,30 +11,38 @@ export default function Contact() {
   });
   const [status, setStatus] = useState("");
 
-  // handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("sending");
+
+    console.log("SERVICE ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+    console.log("TEMPLATE ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
+    console.log("PUBLIC KEY:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formData,
+        {
+          to_name: "CodewithLord", // must match your template variable
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
-        () => {
+        (res) => {
+          console.log("✅ SUCCESS:", res);
           setStatus("success");
           setFormData({ name: "", email: "", message: "" });
         },
-        (error) => {
-          console.error(error);
+        (err) => {
+          console.error("❌ ERROR:", err);
           setStatus("error");
         }
       );
@@ -45,28 +53,22 @@ export default function Contact() {
       id="contact"
       className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#090909] via-[#0d0d0d] to-[#151515] text-white overflow-hidden"
     >
-      {/* Background Grid Overlay */}
+      {/* Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
 
-      {/* Glowing Gradient Blobs */}
+      {/* Animated Gradient Blobs */}
       <motion.div
-        animate={{
-          y: [0, -20, 0],
-          opacity: [0.4, 0.6, 0.4],
-        }}
+        animate={{ y: [0, -20, 0], opacity: [0.4, 0.6, 0.4] }}
         transition={{ duration: 6, repeat: Infinity }}
         className="absolute w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[180px] top-10 left-20"
       />
       <motion.div
-        animate={{
-          y: [0, 20, 0],
-          opacity: [0.4, 0.6, 0.4],
-        }}
+        animate={{ y: [0, 20, 0], opacity: [0.4, 0.6, 0.4] }}
         transition={{ duration: 6, repeat: Infinity }}
         className="absolute w-[600px] h-[600px] bg-cyan-400/20 rounded-full blur-[180px] bottom-10 right-20"
       />
 
-      {/* Contact Form Card */}
+      {/* Contact Form */}
       <motion.form
         onSubmit={handleSubmit}
         whileInView={{ opacity: 1, y: 0 }}
@@ -124,18 +126,6 @@ export default function Contact() {
             : "Send Message"}
         </motion.button>
       </motion.form>
-
-      {/* Scroll to top indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 10, 0] }}
-        transition={{ delay: 1, duration: 1.5, repeat: Infinity }}
-        className="absolute bottom-8 flex flex-col items-center text-white/60 cursor-pointer"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        <span className="text-sm">Back to Top</span>
-        <div className="w-[1px] h-6 bg-white/40 mt-2 animate-pulse"></div>
-      </motion.div>
     </section>
   );
 }

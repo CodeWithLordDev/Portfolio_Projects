@@ -4,7 +4,10 @@ import Hero from "../components/Hero"
 import About from "./about/page"
 import ParallaxTransition from "../components/ParallaxTransition"
 import Contact from "./contact/page"
-import { motion } from "framer-motion";     
+import { motion } from "framer-motion";
+import { metadata } from "./metadata";
+
+export const metadataConfig = metadata; // Re-export if needed
 export default function Home() {
   return (
     <main className="relative bg-black text-white overflow-hidden">
