@@ -25,7 +25,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="text-5xl md:text-7xl font-extrabold text-white drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]"
       >
-        Hey, I’m{" "}
+        Hey, I&apos;m{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
           Ayush Aka CodewithLord
         </span>
@@ -49,7 +49,7 @@ export default function Hero() {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="mt-4 text-sm md:text-base text-white/60 max-w-2xl"
       >
-        Currently pursuing a Bachelor's degree in Information Technology (2nd
+        Currently pursuing a Bachelor&apos;s degree in Information Technology (2nd
         Year). I specialize in <span className="text-purple-400">React</span>,{" "}
         <span className="text-cyan-400">Next.js</span>,{" "}
         <span className="text-pink-400">Tailwind CSS</span>, and{" "}
