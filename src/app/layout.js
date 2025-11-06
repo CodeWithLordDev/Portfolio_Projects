@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 import { useState, useEffect } from "react";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,31 +21,41 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const hideLayout = pathname === "/404"; // Hide layout for 404
+  const hideLayout = pathname === "/404";
 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 5000); // simulate loading time
+    const timeout = setTimeout(() => setLoading(false), 4800); // matches loader duration
     return () => clearTimeout(timeout);
   }, []);
 
   return (
     <html lang="en">
-      <body className="bg-black text-white font-sans">
+      <body className={`bg-black text-white font-sans ${geistSans.variable} ${geistMono.variable}`}>
         <AnimatePresence mode="wait">
-          <motion.main
-            key={pathname}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.4 }}
-            className="min-h-screen overflow-x-hidden"
-          >
-            {!hideLayout && <Navbar />}
-            {loading ? <Loader /> : children }
-            {!hideLayout && <Footer />}
-          </motion.main>
+          {loading ? (
+            <motion.div
+              key="loader"
+              initial={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <Loader />
+            </motion.div>
+          ) : (
+            <motion.main
+              key={pathname}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="min-h-screen overflow-x-hidden"
+            >
+              {!hideLayout && <Navbar />}
+              {children}
+              {!hideLayout && <Footer />}
+            </motion.main>
+          )}
         </AnimatePresence>
       </body>
     </html>
