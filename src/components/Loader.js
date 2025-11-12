@@ -12,7 +12,7 @@ export default function Loader() {
           clearInterval(interval);
           return 100;
         }
-        return p + 2;
+        return p + 3;
       });
     }, 40);
     return () => clearInterval(interval);
@@ -22,7 +22,7 @@ export default function Loader() {
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: progress === 100 ? 0 : 1 }}
-      transition={{ duration: 1, ease: "easeInOut", delay: progress === 100 ? 0.2 : 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: progress === 100 ? 0.1 : 0 }}
       className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50"
     >
       {/* CodewithLord Text Fill Animation */}
