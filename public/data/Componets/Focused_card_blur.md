@@ -1,7 +1,7 @@
 ---
 title: "Interactive Focus Cards | Responsive Image Grid with Blur & Hover Effects using HTML, CSS & JavaScript"
 description: "This project showcases a modern and responsive focus card grid that highlights user interaction through smooth hover animations."
-image: "/Assets/data/images/ Focused_card_blur.png"
+image: "/Assets/data/images/Focused_card_blur.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 ---
 
