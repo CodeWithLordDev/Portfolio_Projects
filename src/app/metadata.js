@@ -17,22 +17,22 @@ export const metadata = {
     "CodewithLord Portfolio",
     "CodewithLord Projects",
   ],
-  authors: [{ name: "CodewithLord", url: "https://yourdomain.com" }],
+  authors: [{ name: "CodewithLord", url: "https://portfolio-ochre-rho-ax0gh5qo21.vercel.app/" }],
   creator: "CodewithLord",
   publisher: "CodewithLord",
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://portfolio-ochre-rho-ax0gh5qo21.vercel.app/"),
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: "https://portfolio-ochre-rho-ax0gh5qo21.vercel.app/",
   },
   openGraph: {
     title: "CodewithLord | Front-End Developer & Web Designer",
     description:
       "Explore CodewithLord’s portfolio showcasing creative front-end projects built with React, Next.js, and JavaScript. Discover modern UI designs and interactive websites.",
-    url: "https://yourdomain.com",
+    url: "https://portfolio-ochre-rho-ax0gh5qo21.vercel.app/",
     siteName: "CodewithLord Portfolio",
     images: [
       {
-        url: "https://yourdomain.com/Assets/Images/portfolio-preview.png",
+        url: "https://portfolio-ochre-rho-ax0gh5qo21.vercel.app//Assets/Images/portfolio-preview.png",
         width: 1200,
         height: 630,
         alt: "CodewithLord Portfolio Preview",
@@ -46,7 +46,7 @@ export const metadata = {
     title: "CodewithLord | Front-End Developer & Web Designer",
     description:
       "Discover CodewithLord’s modern web projects crafted using React, Next.js, and JavaScript.",
-    images: ["https://yourdomain.com/Assets/Images/portfolio-preview.png"],
+    images: ["https://portfolio-ochre-rho-ax0gh5qo21.vercel.app//Assets/Images/portfolio-preview.png"],
     creator: "@CodewithLord",
   },
   robots: {
