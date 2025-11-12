@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Text Flip Animation | Modern Typing & Blur Transition Effect using HTML, CSS & JavaScript"
 description: "Create a smooth and modern text flipping animation that dynamically changes words with a subtle blur and vertical slide effect. This project uses HTML, CSS, and vanilla JavaScript to rotate multiple phrases seamlessly."
-image: "/Assets/data/images/Layout_tooltip_animation.png"
+image: "/Assets/data/images/Layout_tooltip_animation.jpg"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 ---
 
