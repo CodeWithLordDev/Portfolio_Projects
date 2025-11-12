@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ClientLayout from "./ClientLayout";
 import { metadata } from "./metadata";
-
+import Script from "next/script";
 export { metadata };
 
 const geistSans = Geist({
@@ -22,6 +22,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" sizes="512x512" href="/Assets/Images/android-chrome-512x512.png" />
+
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908323046059505"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+        
       </head>
       <body
         className={`bg-black text-white font-sans ${geistSans.variable} ${geistMono.variable}`}
