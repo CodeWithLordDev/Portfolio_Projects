@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="512x512" href="/Assets/Images/android-chrome-512x512.png" />
 
         <meta name="google-adsense-account" content="ca-pub-2908323046059505"/>
-
+        <meta name="google-site-verification" content="mzmkrlR6L1gKFQarmteIqPNo7EEKl82esCpeU0E6xPU" />
       </head>
       <body
         className={`bg-black text-white font-sans ${geistSans.variable} ${geistMono.variable}`}
