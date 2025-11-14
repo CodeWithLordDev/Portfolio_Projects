@@ -25,7 +25,23 @@ export default function RootLayout({ children }) {
 
         <meta name="google-adsense-account" content="ca-pub-2908323046059505"/>
         <meta name="google-site-verification" content="mzmkrlR6L1gKFQarmteIqPNo7EEKl82esCpeU0E6xPU" />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EJK9V3H4DF"
+        />
+
+        <Script id="ga-setup" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EJK9V3H4DF');
+          `}
+        </Script>
+
       </head>
+      {/* <!-- Google tag (gtag.js) --> */}
+
       <body
         className={`bg-black text-white font-sans ${geistSans.variable} ${geistMono.variable}`}
       >
