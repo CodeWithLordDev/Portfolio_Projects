@@ -3,6 +3,8 @@ title: "3D Team Carousel with Scroll and Swipe Animation using HTML, CSS, and Ja
 description: "Build a stunning 3D team carousel that lets users scroll, click, or swipe through team members with smooth animations."
 image: "/Assets/data/images/Team_image_carousel.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-24"
 ---
 
 
@@ -23,7 +25,7 @@ Build a stunning 3D team carousel that lets users scroll, click, or swipe throug
 
   <head>
     <meta charset="UTF-8">
-    <title>Team Carousel - by gopi chakradhar</title>
+    <title>Team Carousel - by CodewithLord</title>
     <link rel="stylesheet" href="./style.css">
 
   </head>

@@ -3,6 +3,8 @@ title: "Scroll-Based CSS Animation Showcase | Seamless Motion Effects Without Ja
 description: "This project demonstrates the power of modern CSS scroll-driven animations—no JavaScript required."
 image: "/Assets/data/images/web_scroll_animation.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-29"
 ---
 
 

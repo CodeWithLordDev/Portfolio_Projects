@@ -3,6 +3,8 @@ title: "Futuristic GSAP SVG Clock | Animated Watch Design Using HTML, CSS & Java
 description: "This project features a beautifully animated clock built with HTML, CSS, and JavaScript, powered by GSAP (GreenSock Animation Platform)."
 image: "/Assets/data/images/halloween_spider_clock.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-14"
 ---
 
 

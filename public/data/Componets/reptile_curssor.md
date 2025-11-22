@@ -3,6 +3,8 @@ title: "Reptile Interactive Cursor Using HTML5 Canvas & Pure JavaScript | Realis
 description: "This project showcases an interactive reptile-like cursor animation built entirely with HTML5 Canvas and JavaScript — no libraries or CSS animations required."
 image: "/Assets/data/images/reptile_curssor.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-19"
 ---
 
 

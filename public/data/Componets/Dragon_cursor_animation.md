@@ -3,6 +3,8 @@ title: "Dragon Animation (SVG Art)  "
 description: "This HTML code renders a detailed SVG-based dragon illustration titled “CodewithLord - Dragon. combines multiple vector graphic elements — head (Cabeza), fins (Aletas), and spine (Espina) — with advanced gradient fills, path transformations, and scalable vector shapes.."
 image: "/Assets/data/images/Dragon_cursor_animation.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-9"
 ---
 
 

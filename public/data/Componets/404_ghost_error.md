@@ -3,6 +3,8 @@ title: "Ghost 404 Page | Interactive Animated Error Screen with Floating Ghost a
 description: "The Ghost 404 Page is a creative and playful error page concept featuring a floating ghost that follows your mouse movements. Built using HTML, CSS, and JavaScript (with jQuery), it turns a simple “page not found” message into a delightful animated experience."
 image: "/Assets/data/images/404_ghost_error.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-4"
 ---
 
 

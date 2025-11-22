@@ -3,6 +3,8 @@ title: "Stick Hero Game Using HTML Canvas and Pure JavaScript"
 description: Build a Stick Hero-style game from scratch using HTML, CSS, and JavaScript with the Canvas API."
 image: "/Assets/data/images/Stick_game.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-24"
 ---
 
 

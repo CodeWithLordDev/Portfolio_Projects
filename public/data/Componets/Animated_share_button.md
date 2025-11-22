@@ -3,6 +3,8 @@ title: "Animated Social Share Button | Interactive Hover Effects using HTML, CSS
 description: "Experience a modern and interactive share button that smoothly transitions to reveal social media icons on hover. Built with HTML, CSS, and JavaScript, this elegant UI component uses Lucide icons and animations to create a clean, responsive, and visually engaging sharing experience."
 image: "/Assets/data/images/Animated_share_button.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-9"
 ---
 
 

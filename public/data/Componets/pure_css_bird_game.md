@@ -3,6 +3,8 @@ title: "Flying Bird Animation Game Using Pure CSS | No JavaScript Needed"
 description: "This project demonstrates a fun and interactive bird flying game built entirely with pure CSS — no JavaScript required! 🐥."
 image: "/Assets/data/images/pure_css_bird_game.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-19"
 ---
 
 

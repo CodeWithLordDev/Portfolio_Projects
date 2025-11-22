@@ -3,6 +3,8 @@ title: "Magnetic Button Hover Effect Using HTML, CSS & GSAP | Interactive Cursor
 description: "This project demonstrates a creative magnetic button hover effect built using HTML, CSS, and GSAP (GreenSock Animation Platform)."
 image: "/Assets/data/images/magnetic_hover_effect.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-19"
 ---
 
 

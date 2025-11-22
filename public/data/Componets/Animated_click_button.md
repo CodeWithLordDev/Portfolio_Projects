@@ -3,6 +3,8 @@ title: "Animated Success Button — Smooth Loading & Checkmark Transition"
 description: "A modern animated button built using HTML, CSS, and JavaScript that visually transitions through three states — idle, loading, and success."
 image: "/Assets/data/images/Animated_click_button.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-9"
 ---
 
 

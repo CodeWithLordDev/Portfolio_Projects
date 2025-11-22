@@ -3,6 +3,8 @@ title: "Animated To-Do List with SVG Line Animation"
 description: "A creative animated To-Do List built with HTML, CSS, and JavaScript that strikes a smooth SVG line through tasks when checked."
 image: "/Assets/data/images/todo.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-29"
 ---
 
 

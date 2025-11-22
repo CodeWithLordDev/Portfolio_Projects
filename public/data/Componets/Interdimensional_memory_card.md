@@ -3,6 +3,8 @@ title: "Interdimensional Memory Carousel | 3D Interactive Space-Themed Experienc
 description: "Step into a futuristic digital realm with the Interdimensional Memory Carousel — a stunning 3D interactive design built using HTML, CSS, and JavaScript."
 image: "/Assets/data/images/Interdimensional_memory_card.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-14"
 ---
 
 

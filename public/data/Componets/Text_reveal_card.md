@@ -3,6 +3,8 @@ title: "Interactive Text Reveal Card with Mouse and Touch Animation using Pure J
 description: "Create an eye-catching text reveal animation card using pure HTML, CSS, and JavaScript — no libraries needed. This interactive card smoothly reveals text as users move their mouse or swipe, with a glowing divider and twinkling star effects in the background."
 image: "/Assets/data/images/Text_reveal_card.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-24"
 ---
 
 

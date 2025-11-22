@@ -3,6 +3,8 @@ title: "Halloween — Valley of Ghouls | Spooky Animated Halloween Website using
 description: "Experience the spooky charm of Valley of Ghouls, a Halloween-themed animated website built using HTML, CSS, and JavaScript."
 image: "/Assets/data/images/halloween_scroll.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-14"
 ---
 
 

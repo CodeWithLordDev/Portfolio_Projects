@@ -45,7 +45,10 @@ export default async function ComponentDetail({ params }) {
           <h1 className="text-4xl font-bold mt-6 text-white">
             {component.title}
           </h1>
-          <p className="text-gray-400 mt-2">{component.description}</p>
+          <p className="text-xs text-start font-bold sm:text-sm text-gray-500 mt-6 dark:text-gray-400 mb-2">
+            {component.author} | {component.date}
+          </p>
+          <p className="text-gray-400 mt-2 text-start">{component.description}</p>
         </div>
 
         {/* Client-side Markdown */}

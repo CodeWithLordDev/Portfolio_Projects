@@ -3,6 +3,8 @@ title: "Timed Cards Opening"
 description: "This project is a **visually engaging web page** that displays travel destination cards with animation and interactivity"
 image: "/Assets/data/images/Timed_card_opening.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-29"
 ---
 
 
@@ -23,7 +25,7 @@ It uses **HTML**, **CSS**, and **GSAP (JavaScript animation library)** to create
 
   <head>
     <meta charset="UTF-8">
-    <title>Codewith/Lord - Timed Cards Opening</title>
+    <title>CodewithLord - Timed Cards Opening</title>
     <link rel="stylesheet" href="./style.css">
 
   </head>

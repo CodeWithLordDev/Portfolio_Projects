@@ -3,6 +3,8 @@ title: "Interactive 3D Carousel Using HTML, CSS & JavaScript | Drag & Scroll Ani
 description: "This project showcases a stunning 3D Carousel built using HTML, CSS, and Vanilla JavaScript that supports drag and scroll-wheel interactions."
 image: "/Assets/data/images/carousel_image_slider.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-9"
 ---
 
 

@@ -3,6 +3,8 @@ title: "3D Interactive Flip Cards with Tilt and Bounce Animation using HTML, CSS
 description: "Experience smooth 3D flip animations with realistic tilt and bounce effects using just HTML, CSS, and JavaScript"
 image: "/Assets/data/images/3D_interactive_card_neon.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-4"
 ---
 
 

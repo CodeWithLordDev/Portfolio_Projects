@@ -3,6 +3,8 @@ title: "Interactive Text Pressure Effect Using Pure JavaScript and Variable Font
 description: Create an eye-catching “Text Pressure” animation using pure JavaScript, CSS, and variable fonts. This effect dynamically adjusts font weight, width, and italics based on mouse movement, giving the illusion of text responding to user interaction."
 image: "/Assets/data/images/Text_pressure.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-24"
 ---
 
 

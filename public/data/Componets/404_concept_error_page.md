@@ -3,6 +3,8 @@ title: "Animated 404 Error Page – Swinging Text and Cloak Effect using @proper
 description: "This creative 404 Error Page Concept combines advanced CSS features like the @property rule, custom variables, and keyframe animations to produce a smooth swinging 3D text effect and dynamic cloak lighting animation."
 image: "/Assets/data/images/404_concept_error_page.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-4"
 ---
 
 

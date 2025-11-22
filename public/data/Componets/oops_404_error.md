@@ -3,7 +3,10 @@ title: "Animated SVG 404 Error Page "
 description: "This is a creative animated 404 error page built using HTML, CSS, and Snap.svg (JavaScript library for SVG animations)."
 image: "/Assets/data/images/oops_404_error.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-19"
 ---
+
 
 
 

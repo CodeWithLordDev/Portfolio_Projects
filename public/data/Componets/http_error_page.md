@@ -3,6 +3,8 @@ title: "Code-Style 404 Error Page with Typing Animation Using HTML, CSS & JavaSc
 description: "This project showcases a creative 404 error page designed to look like a code editor or console output, built using HTML, CSS, and JavaScript."
 image: "/Assets/data/images/http_error_page.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-14"
 ---
 
 

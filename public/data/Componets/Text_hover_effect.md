@@ -3,6 +3,8 @@ title: "Interactive Multicolor Gradient Text Reveal Effect Using SVG and Pure Ja
 description: "Create a stunning hover-based text reveal effect using pure HTML, CSS, SVG, and JavaScript — no external libraries required."
 image: "/Assets/data/images/Text-hover-effect.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-24"
 ---
 
 

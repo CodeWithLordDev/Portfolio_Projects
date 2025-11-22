@@ -3,6 +3,8 @@ title: "No, YOU Hang Up First! — A Playful SVG Animation Challenge "
 description: "This creative web animation combines HTML and SVG to bring a fun and expressive design to life — inspired by the CodePen October 2025 “Mask” Challenge."
 image: "/Assets/data/images/404_hangup_error_page.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-4"
 ---
 
 
@@ -24,7 +26,7 @@ This creative web animation combines HTML and SVG to bring a fun and expressive 
 
   <head>
     <meta charset="UTF-8">
-    <title>#CodepenChallenge Oct &#39;25: Mask</title>
+    <title>CodewithLord - Mask Hangup Page</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Chewy&amp;display=swap''><link rel="stylesheet" href="./style.css">
 
   </head>

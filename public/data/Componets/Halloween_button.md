@@ -3,6 +3,8 @@ title: "Frankenstein’s Monster Toggle Switch | CSS Halloween-Themed Interactiv
 description: "This project creates a Frankenstein-inspired toggle switch using pure HTML and CSS, without any JavaScript."
 image: "/Assets/data/images/Halloween_button.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-14"
 ---
 
 

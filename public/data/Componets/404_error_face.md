@@ -3,6 +3,8 @@ title: "Animated 404 Face – Creative SVG Error Page with CSS Animations"
 description: "This Animated 404 Error Page creatively transforms the digits “404” into a playful, expressive face using SVG paths and CSS animations."
 image: "/Assets/data/images/404_error_face.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-4"
 ---
 
 

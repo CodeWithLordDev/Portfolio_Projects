@@ -3,6 +3,8 @@ title: "Fireworker Simulator | Realistic Fireworks Show Experience with Explosiv
 description: "Fireworker Simulator lets you design, launch, and control dazzling fireworks displays with lifelike motion and vibrant particle effects."
 image: "/Assets/data/images/Fireworker_simluator.png"
 tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
+author: "CodewithLord"
+date: "2025-10-9"
 ---
 
 
