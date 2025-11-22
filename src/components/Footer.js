@@ -1,11 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   const socialLinks = [
     { icon: <FaGithub />, url: "https://github.com/CodeWithLordDev/" },
     { icon: <FaInstagram />, url: "https://instagram.com/codewithlord" },
+    { icon: <FaYoutube />, href: "https://www.youtube.com/@CodewithLord" }, // Added YouTube
+
   ];
 
   return (

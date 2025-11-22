@@ -198,6 +198,7 @@ Root Variables:
 --body-font: Montserrat Alternates
 
 --normal-font-size: default font size
+<br>
 
 Button Base Styles:
 
@@ -206,12 +207,14 @@ Positioned relative for layering images.
 Rounded with 3rem border-radius.
 
 Smooth transition for scaling and hover effects.
+<br>
 
 Hover Shadow (button::after):
 
 A blurred linear gradient appears underneath the button.
 
 Controlled opacity transitions to appear on hover.
+<br>
 
 Geometric Elements (button img):
 
@@ -220,24 +223,26 @@ Positioned absolutely in the center of the button.
 Initially invisible (opacity 0).
 
 Each element has a unique transform (position, rotation, blur).
-
+<br>
 Hover Animation for Images:
 
 On hover, images become visible and move to new positions.
 
 Each shape scales slightly for extra depth.
-
+<br>
 Button Scale:
 
 Entire button enlarges smoothly to 1.3 times its original size on hover.
-
+<br>
 
 ## Magic Animated Motion Button Images
+<br>
 
-Here are the images used in the button:
+<h2>Here are the images used in the button:</h2>
 
-![Cone](Assets/data/img/cone.png)
-![Torus](Assets/data/img/torus.png)
-![Icosahedron](Assets/data//icosahedron.png)
-![Sphere](Assets/data/img/sphere.png)
-
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+  <img src="/Assets/data/img/cone.png" alt="Cone" />
+  <img src="/Assets/data/img/torus.png" alt="Torus" />
+  <img src="/Assets/data/img/icosahedron.png" alt="Icosahedron" />
+  <img src="/Assets/data/img/sphere.png" alt="Sphere" />
+</div>

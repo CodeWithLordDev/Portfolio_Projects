@@ -21,10 +21,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" sizes="512x512" href="/Assets/Images/android-chrome-512x512.png" />
-
-        <meta name="google-adsense-account" content="ca-pub-2908323046059505"/>
-        <meta name="google-site-verification" content="mzmkrlR6L1gKFQarmteIqPNo7EEKl82esCpeU0E6xPU" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/Assets/Images/android-chrome-512x512.png"
+        />
+        <title>CodewithLord</title>
+        <meta name="author" content="CodewithLord" />
+        <meta name="google-adsense-account" content="ca-pub-2908323046059505" />
+        <meta
+          name="google-site-verification"
+          content="mzmkrlR6L1gKFQarmteIqPNo7EEKl82esCpeU0E6xPU"
+        />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-EJK9V3H4DF"
@@ -38,7 +47,6 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-EJK9V3H4DF');
           `}
         </Script>
-
       </head>
       {/* <!-- Google tag (gtag.js) --> */}
 
