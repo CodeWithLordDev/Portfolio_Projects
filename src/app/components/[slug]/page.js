@@ -34,7 +34,10 @@ export default async function ComponentDetail({ params }) {
           <span className="text-lg">Back to Components</span>
         </Link>
         <div className="text-center">
-          <img
+          <Image
+            width={800}
+            height={400}
+            priority
             src={component.image}
             alt={component.title}
             className="w-full rounded-2xl shadow-lg"

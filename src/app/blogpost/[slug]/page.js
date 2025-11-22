@@ -15,6 +15,9 @@ import { motion } from "framer-motion";
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import BackgroundGrid from "@/components/BackgroundGrid";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+
 // Function to read markdown content from public folder
 async function getMarkdownContent(slug) {
   const filepath = path.join(process.cwd(), "public", "content", `${slug}.md`);
@@ -67,12 +70,21 @@ export default async function Page({ params }) {
       {/* 🔹 Content Wrapper (Above grid) */}
       <div className="relative z-10 bg-transparent backdrop-blur-sm max-w-5xl mx-auto p-4 sm:p-6 md:p-8 lg:p-10">
         <div className="mt-14">
+          {/* Back Button */}
+        <Link
+          href="/components"
+          className="flex items-center gap-2 cursor-pointer text-gray-300 hover:text-white transition w-fit mb-4"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          <span className="text-lg">Back to Components</span>
+        </Link>
           <div className="w-full bg-black rounded-xl overflow-hidden flex justify-center items-center">
             <Image
               src={data.image}
               alt={data.title}
               width={1200}
               height={800}
+              priority
               className="object-contain w-full h-full"
             />
           </div>

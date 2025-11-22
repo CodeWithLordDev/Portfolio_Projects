@@ -25,9 +25,12 @@ export default function ComponentsPage({ searchParams }) {
               key={comp.slug}
               className="bg-gray-800 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition"
             >
-              <img
+              <Image
+                width={400}
+                height={192}
                 src={comp.image}
                 alt={comp.title}
+                priority
                 className="h-48 w-full object-cover"
               />
               <div className="p-4">

@@ -39,6 +39,7 @@ const dataPage = () => {
                   alt={data.title}
                   width={400}
                   height={200}
+                  priority
                   className="w-full h-full object-cover"
                 />
               </div>
