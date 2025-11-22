@@ -11,9 +11,11 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 Build a Stick Hero-style game from scratch using HTML, CSS, and JavaScript with the Canvas API. This fun and interactive project demonstrates animation, collision logic, background rendering, and responsive game control — all without external libraries.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -48,11 +50,12 @@ Build a Stick Hero-style game from scratch using HTML, CSS, and JavaScript with 
 </html>
 
 ```
+<br>
 
 
 The HTML defines all the necessary game elements:
 
-A <canvas> element (id="game") used to draw the platforms, hero, and background.
+A (canvas) element (id="game") used to draw the platforms, hero, and background.
 
 Text overlays for:
 
@@ -67,8 +70,10 @@ A Restart button (#restart) shown when the player fails.
 A YouTube link that leads to the original video tutorial.
 
 This minimal structure allows the game visuals to be rendered dynamically via the Canvas API.
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 html,
@@ -201,6 +206,8 @@ body {
 
 ```
 
+<br>
+
 The CSS focuses on layout, positioning, and interface styling:
 
 The entire game centers inside a .container, filling the viewport.
@@ -215,8 +222,10 @@ A YouTube logo appears at the bottom for users on taller screens, created purely
 
 The CSS makes the game visually clean and responsive across screen sizes.
 
+<br>
 
 ## Javascipt Code
+<br>
 
 ```javascript
 /*
@@ -744,6 +753,7 @@ function getTreeY(x, baseHeight, amplitude) {
   return Math.sinus(x) * amplitude + sineBaseY;
 }
 ```
+<br>
 
 The JavaScript controls every aspect of gameplay using Canvas rendering, event listeners, and frame-by-frame animation.
 

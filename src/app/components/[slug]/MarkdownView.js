@@ -1,9 +1,27 @@
 "use client";
+import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
+import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
+import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript";
+import xml from "react-syntax-highlighter/dist/esm/languages/hljs/xml";
+import css from "react-syntax-highlighter/dist/esm/languages/hljs/css";
+import json from "react-syntax-highlighter/dist/esm/languages/hljs/json";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import remarkGfm from "remark-gfm";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import rehypeRaw from "rehype-raw";
+
+SyntaxHighlighter.registerLanguage("javascript", js);
+SyntaxHighlighter.registerLanguage("js", js);
+SyntaxHighlighter.registerLanguage("typescript", ts);
+SyntaxHighlighter.registerLanguage("ts", ts);
+SyntaxHighlighter.registerLanguage("html", xml);
+SyntaxHighlighter.registerLanguage("xml", xml);
+SyntaxHighlighter.registerLanguage("css", css);
+SyntaxHighlighter.registerLanguage("json", json);
 
 // ✅ CodeBlock Component
 function CodeBlock({ inline, className, children, ...props }) {
@@ -46,11 +64,10 @@ function CodeBlock({ inline, className, children, ...props }) {
 
         {/* Code area with smooth expand/collapse */}
         <div
-          className="transition-[max-height] duration-500 ease-in-out"
+          className="overflow-auto hide-scrollbar rounded-xl"
           style={{
-            maxHeight: expanded ? "1000px" : isLong ? "400px" : "none",
-            overflow: "hidden",
-            borderRadius: "0.75rem",
+            maxHeight: "500px",
+            background: "#1e1e1e",
           }}
         >
           <SyntaxHighlighter
@@ -58,40 +75,20 @@ function CodeBlock({ inline, className, children, ...props }) {
             style={atomOneDark}
             showLineNumbers
             PreTag="div"
+            className="hide-scrollbar"
+            codeTagProps={{ className: "hide-scrollbar" }}
             customStyle={{
               margin: 0,
-              borderRadius: "0.75rem",
               background: "#1e1e1e",
+              padding: "16px",
+              fontSize: "15px",
+              overflowX: "auto", // horizontal scroll
             }}
             {...props}
           >
             {codeString}
           </SyntaxHighlighter>
         </div>
-
-        {/* Blur overlay when collapsed */}
-        {isLong && !expanded && (
-          <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#1e1e1e] to-transparent backdrop-blur-sm flex justify-center items-end pb-3">
-            <button
-              onClick={() => setExpanded(true)}
-              className="text-xs text-white bg-gray-800/90 hover:bg-gray-700 px-3 py-1 rounded-md backdrop-blur-md transition-all duration-300 hover:scale-105"
-            >
-              Show More ▼
-            </button>
-          </div>
-        )}
-
-        {/* Show Less button when expanded */}
-        {isLong && expanded && (
-          <div className="absolute bottom-0 left-0 w-full flex justify-center items-end pb-3 bg-gradient-to-t from-[#1e1e1e]/90 to-transparent">
-            <button
-              onClick={() => setExpanded(false)}
-              className="text-xs text-white bg-gray-800/90 hover:bg-gray-700 px-3 py-1 rounded-md backdrop-blur-md transition-all duration-300 hover:scale-105"
-            >
-              Show Less ▲
-            </button>
-          </div>
-        )}
       </div>
     );
   }
@@ -108,9 +105,12 @@ function CodeBlock({ inline, className, children, ...props }) {
 export default function MarkdownView({ content }) {
   return (
     <article className="prose prose-invert max-w-none prose-h2:text-center prose-h2:text-3xl prose-h2:font-bold prose-h2:mt-4 prose-p:text-lg prose-p:leading-relaxed prose-p:text-gray-300 prose-p:text-center">
-
       <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
+        remarkPlugins={[remarkParse, remarkGfm]}
+        rehypePlugins={[
+          [remarkRehype, { allowDangerousHtml: true }],
+          rehypeRaw,
+        ]}
         components={{
           img({ src, alt }) {
             return (

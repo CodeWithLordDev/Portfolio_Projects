@@ -1,6 +1,7 @@
 import { getAllComponents } from "../../utils/getComponents";
 import Link from "next/link";
-
+import Image from "next/image";
+import BackgroundGrid from "@/components/BackgroundGrid";
 export const metadata = { title: "Components" };
 
 export default function ComponentsPage({ searchParams }) {
@@ -13,8 +14,9 @@ export default function ComponentsPage({ searchParams }) {
   const shown = components.slice(startIndex, startIndex + perPage);
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white p-8">
-      <div className="relative top-[5rem]">
+    <div className="min-h-screen relative  bg-gray-950 text-white p-8">
+      <BackgroundGrid />
+      <div className="relative z-10 top-[5rem]">
         <h1 className="text-4xl font-bold text-center mb-8">UI Components</h1>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

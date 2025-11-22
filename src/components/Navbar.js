@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
-  const links = ["Home","About","Projects","Components","Contact"];
+  const links = ["Home","About","Components","Blog","Contact"];
   return (
     <motion.nav
       initial={{ y: -50, opacity: 0 }}
@@ -65,7 +65,7 @@ export default function Navbar() {
           exit={{ opacity: 0, y: -10 }}
           className="absolute top-16 left-0 w-full bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl p-4 flex flex-col gap-3 md:hidden"
         >
-          {["Home", "About", "Projects","Components", "Contact"].map((link, i) => (
+          {["Home", "About","Components","Blog","Contact"].map((link, i) => (
             <a
               key={i}
               href={link === "Home" ? "/" : `/${link.toLowerCase()}`}

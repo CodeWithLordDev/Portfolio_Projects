@@ -12,9 +12,11 @@ This is a creative animated 404 error page built using HTML, CSS, and Snap.svg (
 The design displays a stylized SVG illustration (like a shadow hole and background curve), and JavaScript adds smooth color transition animation to enhance the visual effect when the page loads.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -224,19 +226,22 @@ The design displays a stylized SVG illustration (like a shadow hole and backgrou
 </html>
 
 ```
+<br>
 
 The HTML defines the structure and main elements of the 404 page.
-It starts with the <!DOCTYPE html> declaration, followed by the <html> document that includes a <head> and a <body>.
-Inside the <head>, the page links to an external CSS file (style.css) for styling and loads the Snap.svg library from a CDN for SVG animations.
-The <body> contains a single SVG graphic (id="error") that forms the visual part of the 404 page.
+It starts with the (!DOCTYPE html) declaration, followed by the "html" document that includes a "head" and a "body".
+Inside the "head", the page links to an external CSS file (style.css) for styling and loads the Snap.svg library from a CDN for SVG animations.
+The "body" contains a single SVG graphic (id="error") that forms the visual part of the 404 page.
 This SVG includes two main groups:
 
-#svg-mask → Creates a light background shape using a <path> element.
+#svg-mask → Creates a light background shape using a "path" element.
 
 #svg-hole → Adds two circular paths to simulate a hole with depth (a light outer ring and a dark inner ring).
 Overall, the HTML provides the layout and structure of the visual elements, ensuring the SVG is displayed properly in the browser.
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 body {
@@ -248,13 +253,17 @@ body {
 }
 
 ```
+<br>
+
 The CSS is used to style and position the 404 page elements for a clean, centered, and visually appealing layout.
 The body style removes default margins, sets a dark background color (#1a1a1a), and uses flexbox (display: flex, justify-content: center, align-items: center) to center the SVG both vertically and horizontally in the viewport.
 The height: 100vh property ensures the SVG stays centered even on different screen sizes.
 The svg selector applies a slight zoom effect (transform: scale(1.2)) to make the design appear more prominent on the screen.
 This minimal CSS ensures that the focus remains on the SVG animation, creating a modern and balanced visual appearance.
+<br>
 
 ## Javascipt Code
+<br>
 
 ```javascript
 window.onload = function () {
@@ -309,6 +318,7 @@ window.onload = function () {
 };
 
 ```
+<br>
 
 The JavaScript uses Snap.svg to add animation and interactivity to the SVG graphic.
 It first initializes Snap by selecting the SVG element using Snap("#error").

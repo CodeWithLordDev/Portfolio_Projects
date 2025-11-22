@@ -11,9 +11,12 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 Step into a futuristic digital realm with the Interdimensional Memory Carousel — a stunning 3D interactive design built using HTML, CSS, and JavaScript. This project presents memory cards floating in a cosmic environment, each representing a unique dimension. Users can rotate, flip, and explore glowing holographic cards surrounded by a galaxy of stars, combining advanced 3D animations, responsive layouts, and smooth transitions for an immersive experience.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -443,11 +446,17 @@ Step into a futuristic digital realm with the Interdimensional Memory Carousel �
 
 ```
 
+<br>
+
 
 The HTML structure defines the layout and foundation of the project. It begins with standard document setup, linking external resources such as Bootstrap for layout support, Google Fonts for futuristic typography, and Font Awesome for glowing icons. The cosmic background is created using div elements that simulate stars. A main container holds the header with an animated title and a carousel inside the main section. Each memory card has a front and back side—displaying the dimension’s name, description, and unique details. The navigation buttons placed on the sides allow users to move between cards. Finally, a script tag connects to the JavaScript file that controls the carousel’s animation and interactivity.
 
+<br>
+
 
 ## CSS Code
+<br>
+
 
 ```css
 /* Base Styles */
@@ -848,10 +857,15 @@ footer {
 	}
 }
 ```
+<br>
+
 
 The CSS gives life to the visuals through gradients, lighting, and 3D effects. It starts by defining custom color variables for neon glows, primary hues, and background tones. The entire layout uses a dark, cosmic theme enhanced by animated stars for depth and motion. Each memory card is styled with glowing edges, smooth gradients, and futuristic fonts to match the space aesthetic. The cards are positioned in 3D space using transforms and transitions, making them appear to rotate around a circular path. Hover and flip animations reveal each card’s backside, while glowing borders and glitch effects add realism. The control buttons are styled as circular neon orbs with pulsing light effects. Media queries ensure the design remains responsive across different screen sizes, adjusting layout, text size, and perspective.
+<br>
+
 
 ## Javascipt Code
+<br>
 
 ```javascript
 document.addEventListener("DOMContentLoaded", function () {
@@ -1028,5 +1042,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ```
 
+<br>
 
 Opacity: Smoothly fades in or out the line for extra polish.The JavaScript controls the interactivity and smooth animations of the 3D carousel. It initializes after the page loads, selecting all the memory cards and placing them evenly in a circular formation around a central point. The script calculates the correct angles for each card and applies 3D transformations to create a rotating illusion. Event listeners handle actions like clicking next or previous buttons, flipping a card, and even dragging or swiping across the screen to rotate the carousel manually. It continuously tracks which card is at the front and updates its position during interactions. Additionally, the script responds to keyboard controls, allowing users to navigate using arrow keys and flip cards with space or enter keys. On window resizing, it recalculates the layout to maintain perfect balance and alignment, ensuring the animation looks fluid on all devices.

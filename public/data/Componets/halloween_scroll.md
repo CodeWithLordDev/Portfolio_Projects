@@ -13,7 +13,8 @@ It features glowing neon text, floating ghost animations, and a dynamic backgrou
 Perfect for learning creative front-end design, CSS animations, and event-based interactivity in JavaScript.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
 
@@ -143,25 +144,31 @@ Perfect for learning creative front-end design, CSS animations, and event-based 
 </html>
 
 ```
+<br>
+
 
 
 The HTML file forms the structure of the Halloween scene.
 It contains:
 
-A main container (<div class="container">) that centers the content both vertically and horizontally.
+A main container (div class="container") that centers the content both vertically and horizontally.
 
 A heading (<h1>Valley of Ghouls</h1>) — the glowing main title of the page.
 
-Two ghost elements (<div class="ghost"></div>) representing the floating ghosts that animate independently.
+Two ghost elements (div class="ghost") representing the floating ghosts that animate independently.
 
-A button (<button id="next">Next</button>) that triggers the theme transformation via JavaScript.
+A button (button id="next") that triggers the theme transformation via JavaScript.
 
 This HTML acts as the base layout — simple, clean, and designed for the CSS and JS to add life to it.
 
 
+<br>
+
 
 
 ## CSS Code
+<br>
+
 
 ```css
 * {
@@ -245,6 +252,8 @@ body {
 }
 
 ```
+<br>
+
 
 
 The CSS is where the magic and spookiness come to life.
@@ -289,9 +298,13 @@ Overall, the CSS adds motion, color, and emotion, transforming a static layout i
 
 
 
+<br>
+
 
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 let select = e => document.querySelector(e);
@@ -475,6 +488,8 @@ ScrollTrigger.create({
 });
 
 ```
+<br>
+
 
 The JavaScript introduces interactivity and dynamic transformation to the page.
 

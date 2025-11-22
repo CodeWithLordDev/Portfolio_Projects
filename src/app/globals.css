@@ -4,3 +4,41 @@
 .stroke-text {
   -webkit-text-stroke: 2px white;
 }
+
+
+@keyframes moveGrid {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none !important;
+}
+
+/* Hide scrollbar inside react-syntax-highlighter <pre> */
+pre.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+pre.hide-scrollbar {
+  scrollbar-width: none !important;
+}
+
+/* Hide scrollbar inside <code> */
+code.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+code.hide-scrollbar {
+  scrollbar-width: none !important;
+}

@@ -11,9 +11,13 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 This project features a beautifully animated clock built with HTML, CSS, and JavaScript, powered by GSAP (GreenSock Animation Platform). It brings timekeeping to life using smooth morphing SVG elements, rotating clock hands, and dynamic visual effects. The design combines motion, precision, and creativity, making it an excellent showcase of SVG animation and GSAP’s power for UI micro-interactions.
 
 
-␣␣
+<br>
+
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -128,10 +132,16 @@ This project features a beautifully animated clock built with HTML, CSS, and Jav
 </html>
 
 ```
+<br>
 
-The HTML structure forms the visual layout of the clock. It sets up a full-page canvas where the clock sits centered both vertically and horizontally. The body holds two main elements — a vertical line (vline) and a wrapper (gsapWrapper) that contains the animated SVG watch. Within the wrapper, an SVG defines the clock face and its various components like the hour, minute, and second hands. These SVG paths are later accessed and animated by JavaScript, creating the illusion of a living, breathing timepiece.
+
+The HTML structure forms the visual layout of the clock. It sets up a full-page canvas where the clock sits centered both vertically and horizontally. The body holds two main elements — a vertical line (vline) and a wrapper (gsapWrapper) that contains the animated SVG watch. Within the wrapper, an SVG defines the clock face and its various components like the hour, minute, and second hands. These SVG paths are later accessed and animated by JavaScript, creating the illusion of a living, breathing timepiece.<br>
+
+
 
 ## CSS Code
+<br>
+
 
 ```css
 html, body {
@@ -204,8 +214,16 @@ body {
 
 }
 ```
-The CSS controls the layout, alignment, and visual styling of the page and SVG. The entire page uses a gradient background that blends warm brown and gold tones, giving the clock a metallic, luxury feel. The .vline element adds a faint glowing vertical line to enhance symmetry and depth. The .gsapWrapper and its inner elements manage sizing and responsiveness using aspect ratios and media queries, ensuring the clock scales correctly across orientations. All visual properties like color, positioning, and visibility are defined here, while motion and animation are handled separately by GSAP in JavaScript.
+<br>
+
+
+
+The CSS controls the layout, alignment, and visual styling of the page and SVG. The entire page uses a gradient background that blends warm brown and gold tones, giving the clock a metallic, luxury feel. The .vline element adds a faint glowing vertical line to enhance symmetry and depth. The .gsapWrapper and its inner elements manage sizing and responsiveness using aspect ratios and media queries, ensuring the clock scales correctly across orientations. All visual properties like color, positioning, and visibility are defined here, while motion and animation are handled separately by GSAP in JavaScript.<br>
+
+
 ## Javascipt Code
+<br>
+
 
 ```javascript
 let select = e => document.querySelector(e);
@@ -398,4 +416,7 @@ function startAnimation() {
 
 }
 ```
+<br>
+
+
 The JavaScript file drives the animation using GSAP. It begins by selecting key SVG elements — such as the clock face and the three hands — and stores their path data. When the page loads, it initializes animations that continuously update the clock’s hands to reflect real time. GSAP timelines animate each element: rotating second, minute, and hour hands, applying bounces, and morphing shapes for dynamic movement. Helper functions calculate rotations based on the system time and synchronize the visuals with actual seconds, minutes, and hours. The morphing transitions between SVG paths create subtle, organic shifts, giving the illusion of motion and life. Additional animations like face pulsation and direction flipping add realism, while continuous loops keep the clock in perpetual animated rhythm.

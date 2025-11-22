@@ -11,9 +11,12 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 This creative web animation combines HTML and SVG to bring a fun and expressive design to life — inspired by the CodePen October 2025 “Mask” Challenge. Using vector graphics, clever path shaping, and smooth text effects, the project delivers a humorous “No, YOU hang up first!” theme with a hand-drawn style. The SVG structure represents illustrated elements like a cloak, face, and phone receiver, while the text adds a lighthearted tone reminiscent of cartoon-style love calls.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -36,10 +39,14 @@ This creative web animation combines HTML and SVG to bring a fun and expressive 
 </html>
 
 ```
+<br>
+
 
 
 
 ## CSS Code
+<br>
+
 
 ```css
 body {

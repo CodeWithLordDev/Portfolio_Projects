@@ -14,8 +14,10 @@ It’s built using HTML, CSS, and JavaScript, featuring smooth transitions, resp
 
 
 
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -135,22 +137,25 @@ It’s built using HTML, CSS, and JavaScript, featuring smooth transitions, resp
 </html>
 
 ```
+<br>
 
 
 The HTML defines the structure of the page and the custom context menu.
 It includes:
 
-A <div> or <section> element to hold the context menu container.
+A div or section element to hold the context menu container.
 
-Inside the menu, multiple <button> or <li> elements represent menu options like Copy, Paste, Delete, etc.
+Inside the menu, multiple button or li elements represent menu options like Copy, Paste, Delete, etc.
 
 Each menu item can have an icon and text label for better visual clarity.
 
 In short, HTML sets up the skeleton — defining what elements exist and how they’re grouped for styling and interactivity.
 
+<br>
 
 
 ## CSS Code
+<br>
 
 ```css
 :root {
@@ -1460,6 +1465,7 @@ body, #app {
 }
 
 ```
+<br>
 
 
 
@@ -1475,7 +1481,8 @@ Positioning: The context menu is positioned absolutely, allowing JavaScript to d
 
 Overall, CSS gives the design its aesthetic and animation appeal, turning a simple menu into a glowing, interactive element.
 
- 
+ <br>
+
 
 ## Javascipt Code
 
@@ -1561,6 +1568,7 @@ $hue2.value = rand2;
 document.body.style.setProperty('--hue1', rand1 );
 document.body.style.setProperty('--hue2', rand2 );
 ```
+<br>
 
 The JavaScript handles all interactivity and logic:
 

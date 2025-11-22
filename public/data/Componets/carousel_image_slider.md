@@ -14,7 +14,7 @@ The design includes custom cursors, glowing gradient backgrounds, and responsive
 Built purely with front-end technologies — no external libraries — this project demonstrates how to combine CSS variables, transform animations, and JavaScript event handling to make an elegant, physics-like interactive carousel.
 Ideal for portfolios, image galleries, and creative showcase websites.
 
-␣␣
+<br>
 
 ## 💻 HTML Code
 
@@ -209,15 +209,17 @@ A .layout div is added for decorative vertical line and branding text.
 
 The logo (C) links to the contact page of your portfolio.
 
-Social icons (Instagram) are defined inside <svg> symbols and reused via <use> tags for clean, scalable vector graphics.
+Social icons (Instagram) are defined inside svg symbols and reused via use tags for clean, scalable vector graphics.
 
 Two custom cursor divs (.cursor and .cursor2) are created for the animated cursor effect controlled by JavaScript.
 
 External CSS and JS files (style.css and script.js) are linked for styling and behavior.
 
 
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 body {
@@ -419,8 +421,10 @@ body {
 }
 
 ```
+<br>
 
-🎨 CSS Explanation:
+## 🎨 CSS Explanation:
+<br>
 
 The body uses a gradient background with hidden overflow and Roboto font for a modern look.
 
@@ -438,6 +442,8 @@ The .cursor and .cursor2 create custom animated cursors, following mouse movemen
 
 Media queries ensure cursor display only on devices with a fine pointer (desktop).
 
+<br>
+<br>
 
 
 ## Javascipt Code
@@ -539,8 +545,10 @@ document.addEventListener('touchmove', handleMouseMove)
 document.addEventListener('touchend', handleMouseUp)
 
 ```
+<br>
+<br>
 
-⚙️ JavaScript Explanation:
+## ⚙️ JavaScript Explanation:
 
 Variables like progress, startX, active, and isDown manage carousel state.
 

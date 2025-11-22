@@ -12,9 +12,10 @@ This Animated 404 Error Page creatively transforms the digits “404” into a p
 Each element of the face — eyes, pupils, mouth, and nose — animates dynamically to give the illusion that the “404” is alive: it looks around, blinks, and smiles.
 The design uses no JavaScript, relying solely on SVG graphics and CSS keyframes for smooth, lightweight motion.
 
-␣␣
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -103,11 +104,12 @@ The design uses no JavaScript, relying solely on SVG graphics and CSS keyframes 
 </html>
 
 ```
+<br>
 
 The structure of the page is built around an SVG graphic, which visually represents the “404” number as a cartoon face.
 What’s Happening:
 
-The SVG <polyline> and <path> elements form the outline of facial features.
+The SVG polyline and path elements form the outline of facial features.
 
 The two “4”s are shaped like eyes, and the “0” becomes a nose or central feature.
 
@@ -115,9 +117,12 @@ Each part (eyes, pupils, mouth, nose) has its own CSS animation to bring the fac
 
 The result: The 404 error number literally “looks around, blinks, and smiles.”
 
+<br>
 
 
 ## CSS Code
+<br>
+
 
 ```css
 * {
@@ -239,6 +244,8 @@ main {
   }
 }
 ```
+<br>
+
 
 he entire animation logic is handled by CSS only — no JavaScript!
 

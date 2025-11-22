@@ -15,9 +15,10 @@ It’s a perfect example of how powerful CSS animations can be for creating dyna
 Ideal for beginners learning advanced CSS animation techniques or developers experimenting with creative front-end effects.
 
 
-␣␣
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -62,24 +63,28 @@ Ideal for beginners learning advanced CSS animation techniques or developers exp
 </html>
 
 ```
+<br>
+<br>
 
-The HTML structure creates the foundation of the game interface without using any JavaScript logic. The <div class="wrapper"> acts as the main game area, containing all visual elements and gameplay mechanics. Inside it:
+The HTML structure creates the foundation of the game interface without using any JavaScript logic. The (div class="wrapper") acts as the main game area, containing all visual elements and gameplay mechanics. Inside it:
 
-A timer bar (<div class="timer"><span></span></div>) visually shows how much time is left before the game ends.
+A timer bar (div class="timer")(span) (span) (div) visually shows how much time is left before the game ends.
 
-The "GAME OVER" text (<div class="gameover">) appears at the end of the game using CSS animation.
+The "GAME OVER" text (div class="gameover") appears at the end of the game using CSS animation.
 
-The game title (<h1>) and subtitle (<h2>) display information and credit.
+The game title (h1) and subtitle (h2) display information and credit.
 
-Multiple hidden radio inputs (<input class="input-circle" type="radio">) represent targets (birds). When clicked, they act as “hits”.
+Multiple hidden radio inputs (input class="input-circle" type="radio") represent targets (birds). When clicked, they act as “hits”.
 
-Each bird is represented by a <label> linked to its respective input (for="circle1" etc.), styled with the pajaro class. Clicking on a bird label checks the associated input, triggering CSS effects to simulate shooting the bird.
+Each bird is represented by a (label) linked to its respective input (for="circle1" etc.), styled with the pajaro class. Clicking on a bird label checks the associated input, triggering CSS effects to simulate shooting the bird.
 
-The score counter (<div class="sum">SCORE:</div>) uses CSS counters to track how many birds have been shot.
+The score counter (div class="sum")SCORE:(div) uses CSS counters to track how many birds have been shot.
 
-Finally, a <script src="./script.js"></script> tag is present, but no JavaScript logic is required for functionality—this is a pure CSS-based game. The HTML mainly serves to structure the interactive elements and connect labels to hidden inputs for user interaction.
+Finally, a (script src="./script.js")(script) tag is present, but no JavaScript logic is required for functionality—this is a pure CSS-based game. The HTML mainly serves to structure the interactive elements and connect labels to hidden inputs for user interaction.
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 body{
@@ -323,6 +328,8 @@ footer a{text-decoration:none;  font-size:20px; color:rgba(29,161,242,1.00); ver
 }
 
 ```
+<br>
+
 The CSS file is where the entire game logic, animations, and visuals are implemented using advanced CSS features and keyframes—without any JavaScript.
 
 General Setup:

@@ -13,11 +13,13 @@ It provides a futuristic “missing page” design that’s minimal yet visually
 The effect gives the illusion of the “404” text swinging in space with light shadows moving behind it, representing the “lost” or “missing” theme of the page.
 
 
-␣␣
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,21 +49,24 @@ The effect gives the illusion of the “404” text swinging in space with light
 </html>
 
 ```
+<br>
 
 
 The HTML provides a clean and simple layout for the 404 page:
 
-The <h1> element displays the large “404” error code.
+The "h1" element displays the large “404” error code.
 
 A div structure (.cloak__wrapper, .cloak__container, .cloak) creates the animated shadow cloak, which gives depth and movement behind the main text.
 
-The .info section contains the error message, description, and a Home button (<a> link) to navigate back to the homepage.
+The .info section contains the error message, description, and a Home button ("a" link) to navigate back to the homepage.
 
 This structure separates main visual content (404 animation) from informational content (message and navigation).
 
+<br>
 
 
 ## CSS Code
+<br>
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;300&display=swap");
@@ -198,6 +203,7 @@ h1:after {
 }
 
 ```
+<br>
 
 This is the core of the project — the animations, colors, and 3D illusion are entirely driven by modern CSS.
 
@@ -207,8 +213,7 @@ Custom CSS Variables & @property:
 The code defines --swing-x and --swing-y custom properties using the new @property feature, allowing smooth animation of CSS variables across keyframes.
 
 Text Animation:
-The <h1> “404” text uses:
-
+The  “404” text uses:
 radial-gradient for light reflection across the text.
 
 Animated background shifting to simulate light moving.
@@ -225,13 +230,16 @@ The @keyframes swing animation continuously updates --swing-x and --swing-y valu
 Typography & Layout:
 The page uses flexbox for centering, Google Fonts for modern typography, and clamp() for responsive scaling of text and container sizes.
 
-The result is a smooth swinging 3D animation entirely powered by CSS — no JavaScript motion required.
+The result is a smooth swinging 3D animation entirely powered by CSS — no JavaScript motion required.<br>
+
 ## Javascipt Code
+<br>
 
 ```javascript
 // 404
 
 ```
+<br>
 
 In this project, the JavaScript file (script.js) is included, but the animation itself is purely handled by CSS.
 If used, the script may simply:

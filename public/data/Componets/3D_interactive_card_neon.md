@@ -13,9 +13,11 @@ Each card flips on click (or tap) to reveal more details on the back and tilts d
 Perfect for portfolios, product showcases, or feature highlights, this project combines modern UI design with subtle motion effects to create an engaging user interface.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -151,6 +153,7 @@ Perfect for portfolios, product showcases, or feature highlights, this project c
 </html>
 
 ```
+<br>
 
 
 .card-grid — A responsive grid container that holds all the cards.
@@ -169,8 +172,10 @@ Each card includes titles, short descriptions, feature lists, and CTA (Call To A
 
 
 
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap");
@@ -405,6 +410,7 @@ ul.features li::before {
   }
 }
 ```
+<br>
 
 perspective gives a sense of 3D depth.
 
@@ -421,17 +427,22 @@ Fonts: “Orbitron” for headings (tech style), “Inter” for readability.
 
 Accent Color: Cyan (#00f5ff) for a futuristic look.
 
-Backgrounds: Dark gradient with translucent card backgrounds.
+Backgrounds: Dark gradient with translucent card backgrounds.<br>
+
 
 📱 Responsiveness
+<br>
 
 Uses grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) to make the layout automatically adjust for mobile.
 
 Text and padding scale down below 768px.
+<br>
 
 ## Javascipt Code
+<br>
 
 ```javascript
+
 const isTouch = "ontouchstart" in window;
 
 document.querySelectorAll(".card").forEach((card) => {
@@ -509,6 +520,7 @@ document.querySelectorAll(".card").forEach((card) => {
 });
 
 ```
+<br>
 
 The JavaScript adds interactivity and motion logic.
 

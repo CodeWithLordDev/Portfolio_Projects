@@ -11,9 +11,11 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 This project is a **visually engaging web page** that displays travel destination cards with animation and interactivity.  
 It uses **HTML**, **CSS**, and **GSAP (JavaScript animation library)** to create a dynamic card transition effect with a navigation bar, details section, and progress pagination.
 
+<br>
 
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -192,6 +194,7 @@ It uses **HTML**, **CSS**, and **GSAP (JavaScript animation library)** to create
 </html>
 
 ```
+<br>
 
 
 The HTML defines the layout of the page.
@@ -207,8 +210,10 @@ A pagination section for slide transitions.
 A cover element used for animated page entry effects.
 
 The GSAP library is loaded for animations.
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
@@ -469,6 +474,7 @@ nav > div:last-child > .active:after {
 }
 
 ```
+<br>
 
 The dark theme with #1a1a1a background gives a cinematic feel.
 
@@ -479,8 +485,10 @@ Typography uses Inter for text and Oswald for large titles.
 .pagination defines circular navigation arrows and a progress bar that animates between slides.
 
 .cover creates a smooth transition overlay during page load.
+<br>
 
 ## Javascipt Code
+<br>
 
 ```javascript
 const data = [
@@ -847,6 +855,7 @@ async function start() {
 start()
 
 ```
+<br>
 
 GSAP (GreenSock Animation Platform) provides smooth, high-performance animations.
 

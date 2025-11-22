@@ -14,9 +14,10 @@ As the user moves their mouse, the cursor smoothly follows the movement, rotates
 This effect enhances UI interactivity, making it perfect for modern websites, portfolios, and creative interfaces where smooth animations improve user engagement.
 
 
-␣␣
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -40,6 +41,7 @@ This effect enhances UI interactivity, making it perfect for modern websites, po
 </html>
 ```
 
+<br>
 
 The HTML defines the basic structure of the animation.
 It includes:
@@ -51,8 +53,10 @@ The GSAP library is imported via CDN to handle all motion and animation logic.
 Finally, an external CSS and JavaScript file are linked to style and animate the elements respectively.
 In short, the HTML provides the skeleton for the visual and interactive components.
 
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 body {
@@ -121,6 +125,7 @@ body {
   color: #ddd;
 }
 ```
+<br>
 
 The CSS styles the page and defines the cursor visuals and hover behavior.
 
@@ -135,8 +140,10 @@ Both cursors are set to position: fixed and pointer-events: none to ensure smoot
 The #target button is centered using Flexbox, styled with a gray border, and changes color on hover for visual feedback.
 Overall, the CSS defines the sleek, futuristic look and positioning of all visual elements.
 
+<br>
 
 ## Javascipt Code
+<br>
 
 ```javascript
 const cursor = document.getElementById("cursor");
@@ -238,6 +245,7 @@ target.addEventListener("mouseleave", () => {
 
 startRotation();
 ```
+<br>
 
 The JavaScript file (using GSAP) controls the animations and cursor interactions.
 Here’s how it works:

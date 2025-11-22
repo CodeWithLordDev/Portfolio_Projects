@@ -13,9 +13,10 @@ It combines **HTML structure**, **CSS transitions**, and **JavaScript DOM manipu
 You can use it for **daily planner UIs**, **interactive learning projects**, or **creative portfolio demos**.
 
 
-␣␣
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -53,6 +54,7 @@ You can use it for **daily planner UIs**, **interactive learning projects**, or 
 
 ```
 
+<br>
 
 The HTML defines a single .text-reveal-card containing:
 
@@ -67,8 +69,10 @@ Two overlapping text elements — text-base (bottom) and text-reveal (top).
 A vertical divider line that moves with the cursor or touch.
 
 This clean structure allows the top text to be “clipped” dynamically, showing only a portion of it based on user interaction.
+<br>
 
 ## CSS Code
+<br>
 
 ```css
 <style>>
@@ -218,6 +222,7 @@ This clean structure allows the top text to be “clipped” dynamically, showin
     }
   </style>
 ```
+<br>
 
 The CSS handles the layout, gradients, and animation effects:
 
@@ -236,30 +241,34 @@ text-reveal uses a lighter gradient and a clip-path that hides or reveals parts 
 .stars and .star elements create twinkling particles using CSS keyframes for subtle motion.
 
 The result is a futuristic card design with elegant motion and lighting effects.
+<br>
 
 ## Javascipt Code
+<br>
 
 The JavaScript adds all the interactivity
 
 It dynamically fills the text using:
-```
+<br>
 
+```js
 const BASE_TEXT_CONTENT = "Programer Devloper";
 const REVEAL_TEXT_CONTENT = "CodewithLord Devloper";
-
 ```
+<br>
+
 
 It generates 80 stars at random positions for the animated background.
 
 Mouse and touch events (mousemove, touchmove) calculate how far the pointer has moved across the container and adjust:
-```
+
 clip-path: inset(0 ${rightInset}% 0 0)
 This determines how much of the text-reveal layer is visible.
-```
 
 The divider follows this movement, rotating slightly and fading in/out for smooth visual feedback.
 
 When the user leaves the area or lifts their finger, the reveal resets.
+<br>
 
 ```js
 

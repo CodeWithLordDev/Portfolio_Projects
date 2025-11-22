@@ -11,10 +11,12 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 A modern animated button built using HTML, CSS, and JavaScript that visually transitions through three states — idle, loading, and success.
 When clicked, the button replaces its text with a spinning loader animation, simulating a background process (like a form submission). After a short delay, the loader switches to a success checkmark before returning to its original state.
 
+<br>
 
-␣␣
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -49,11 +51,13 @@ When clicked, the button replaces its text with a spinning loader animation, sim
 
 ```
 
+<br>
+
 
 HTML Structure Explanation
 
 The HTML defines a single button element with the class animated-button.
-Inside it, there’s a wrapper <div> called button-content, which holds three main elements:
+Inside it, there’s a wrapper "div" called button-content, which holds three main elements:
 
 Loader SVG: A circular stroke animation that rotates to represent “loading”.
 
@@ -66,9 +70,13 @@ The SVG icons are scalable vector graphics — they allow for crisp animations w
 The JavaScript manipulates these inner elements dynamically to switch between states.
 
 
+<br>
+
 
 
 ## CSS Code
+<br>
+
 
 ```css
 body {
@@ -117,6 +125,8 @@ body {
 
 
 ```
+<br>
+
 
 Body Setup
 
@@ -164,8 +174,12 @@ After a short delay: The checkmark fades out, and the button resets to its initi
 
 
 
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 const button = document.getElementById("animatedButton");
@@ -204,6 +218,8 @@ button.addEventListener("click", async () => {
 });
 
 ```
+<br>
+
 
 
 

@@ -13,9 +13,12 @@ It combines multiple vector graphic elements — head (Cabeza), fins (Aletas), a
 The design is structured to be lightweight, responsive, and visually detailed without requiring external image files.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -176,16 +179,20 @@ The design is structured to be lightweight, responsive, and visually detailed wi
 </body>
 </html>
 ```
+<br>
+
 
 Declares a responsive HTML5 document.
 
-The <title> tag defines the page title shown on the browser tab.
+The title tag defines the page title shown on the browser tab.
 
 Links to an external style.css file for styling (background, positioning, or animation).
 
 A .container div holds the entire SVG art, allowing easier control via CSS.
 
 ## CSS Code
+<br>
+
 
 ```css
 *{
@@ -207,12 +214,14 @@ A .container div holds the entire SVG art, allowing easier control via CSS.
     height:100vh;
 }
 ```
+<br>
 
-The <svg> element defines a scalable vector graphic canvas.
 
-The <defs> section stores reusable vector shapes and gradients.
+The svg element defines a scalable vector graphic canvas.
 
-<g> (group) elements define individual dragon parts like:
+The defs section stores reusable vector shapes and gradients.
+
+g (group) elements define individual dragon parts like:
 
 Cabeza (Head)
 
@@ -223,8 +232,12 @@ Espina (Spine)
 These can be reused or animated later through CSS or JavaScript.
 
 
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 "use strict";

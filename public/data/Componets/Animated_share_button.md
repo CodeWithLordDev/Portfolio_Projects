@@ -11,9 +11,13 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 Experience a modern and interactive share button that smoothly transitions to reveal social media icons on hover. Built with HTML, CSS, and JavaScript, this elegant UI component uses Lucide icons and animations to create a clean, responsive, and visually engaging sharing experience.
 
 
-␣␣
+<br>
+
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -52,6 +56,8 @@ Experience a modern and interactive share button that smoothly transitions to re
 </html>
 
 ```
+<br>
+
 
 
 The HTML file sets up the structure of the animated share button.
@@ -77,9 +83,13 @@ The script file (script.js) is linked at the bottom to handle functionality.
 
 
 
+<br>
+
 
 
 ## CSS Code
+<br>
+
 
 ```css
 body {
@@ -195,6 +205,8 @@ body {
 }
 
 ```
+<br>
+
 
 
 The CSS controls the design, layout, and animation of the button.
@@ -240,8 +252,12 @@ Smooth Transitions
 Both .share-content and .share-icons use transitions for smooth animations.
 
 
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 lucide.createIcons();
@@ -261,6 +277,9 @@ document.querySelectorAll(".share-icons .icon").forEach((icon) => {
 
 
 ```
+<br>
+
+
 
 The JavaScript file (script.js) controls the behavior when users click on any social media icon.
 

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ComponentCard({ component }) {
   return (
@@ -9,7 +10,7 @@ export default function ComponentCard({ component }) {
         whileHover={{ scale: 1.05 }}
         className="bg-gray-800 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-pointer"
       >
-        <img
+        <Image
           src={component.image}
           alt={component.title}
           className="w-full h-48 object-cover"

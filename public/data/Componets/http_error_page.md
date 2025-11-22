@@ -14,9 +14,13 @@ A smooth typing animation simulates the code being typed line-by-line, enhancing
 The combination of monospace fonts, syntax highlighting, and animation makes it a visually appealing and modern 404 error design.
 
 
-␣␣
+<br>
+
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -46,17 +50,21 @@ The combination of monospace fonts, syntax highlighting, and animation makes it 
 
 The HTML provides the base structure of the 404 error page.
 
-The <p> tag displays the main error message: HTTP: 404.
+The "p" tag displays the main error message: HTTP: 404.
 
-Multiple <code> elements mimic programming code lines, such as variable declarations and conditional statements, to give a developer-console vibe.
+Multiple "code" elements mimic programming code lines, such as variable declarations and conditional statements, to give a developer-console vibe.
 
-Syntax-like elements such as <span>, <em>, <b>, and <i> are used to represent keywords, variables, and strings — styled differently using CSS for code highlighting.
+Syntax-like elements such as "span," "em", "b", and "i "are used to represent keywords, variables, and strings — styled differently using CSS for code highlighting.
 
-A <center><a>HOME</a></center> element acts as a navigation link back to the homepage.
+A "center HOME center" element acts as a navigation link back to the homepage.
 
 The HTML structure is minimal and relies on CSS and JavaScript for styling and animation effects.
+<br>
+
 
 ## CSS Code
+<br>
+
 
 ```css
 @import url("https://fonts.googleapis.com/css?family=Bevan");
@@ -125,14 +133,16 @@ a {
   }
 }
 ```
+<br>
+
 
 The CSS styles the page to resemble a dark code editor with syntax highlighting.
 
 The body background is set to a dark gray #282828, matching the look of coding terminals.
 
-The <p> tag (HTTP 404 message) uses a large bold Bevan font and a text shadow to give a glowing, embossed text effect.
+The p tag (HTTP 404 message) uses a large bold Bevan font and a text shadow to give a glowing, embossed text effect.
 
-The <code> tags display code lines in a monospaced font, with different colors for syntax elements:
+The code tags display code lines in a monospaced font, with different colors for syntax elements:
 
 span for yellow keywords
 
@@ -148,8 +158,12 @@ Responsive design ensures the text scales properly on smaller screens.
 Overall, the CSS turns a standard 404 message into a beautifully coded aesthetic.
 
 
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 function type(n, t) {
@@ -175,8 +189,10 @@ type(1, 600);
 type(2, 1300);
 
 ```
+<br>
 
-The JavaScript adds the typing animation effect to the <code> elements.
+
+The JavaScript adds the typing animation effect to the (code) elements.
 
 The type() function takes two parameters:
 
@@ -184,7 +200,7 @@ n: which line of code to animate
 
 t: the delay before animation starts
 
-It retrieves the content of a specific <code> tag, clears it, and then uses setInterval to gradually reveal each character one by one — creating a typewriter animation.
+It retrieves the content of a specific (code) tag, clears it, and then uses setInterval to gradually reveal each character one by one — creating a typewriter animation.
 
 Once typing is complete, it removes the blinking cursor (“|”) and displays the full line.
 

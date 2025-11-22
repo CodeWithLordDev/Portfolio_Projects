@@ -11,7 +11,8 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 The Ghost 404 Page is a creative and playful error page concept featuring a floating ghost that follows your mouse movements. Built using HTML, CSS, and JavaScript (with jQuery), it turns a simple “page not found” message into a delightful animated experience. The ghost gently bounces in the air with glowing effects, its eyes track the user’s cursor, and subtle animations bring life to the entire scene. This engaging design not only delivers a clear error message but also adds charm and personality to an otherwise frustrating moment.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
 
@@ -70,10 +71,23 @@ The Ghost 404 Page is a creative and playful error page concept featuring a floa
 </html>
 
 ```
-The HTML structure defines the ghost and its surrounding elements inside a central box. It contains multiple divs for the ghost’s head, eyes, bottom curves, and decorative symbols floating around it. A shadow element gives depth to the animation, making the ghost appear as if it’s hovering. Below the ghost, there’s a description section displaying a friendly “Whoops!” message and a short explanation that the page couldn’t be found, along with a “Go back” button linking to an external page. The layout is minimal yet well-organized, serving as the framework for all the visual and interactive elements handled by CSS and JavaScript.
+<br>
+
+
+The HTML structure defines the ghost and its surrounding elements inside a central box. It contains multiple divs for the ghost’s head, eyes, bottom curves, and decorative symbols floating around it.<br>
+
+ A shadow element gives depth to the animation, making the ghost appear as if it’s hovering. <br>
+
+Below the ghost, there’s a description section displaying a friendly “Whoops!” message and a short explanation that the page couldn’t be found, along with a “Go back” button linking to an external page.<br>
+
+ The layout is minimal yet well-organized, serving as the framework for all the visual and interactive elements handled by CSS and JavaScript.
+
+<br>
 
 
 ## CSS Code
+<br>
+
 
 ```css
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
@@ -371,12 +385,18 @@ html, body {
 }
 
 ```
+<br>
+
 
 The CSS defines the spooky yet cute visual theme of the page. It uses a dark purple background with a contrasting light-colored ghost created entirely from div elements. Animations such as upndown make the ghost float up and down continuously, while smallnbig changes the width of the shadow to simulate hovering. The glowing symbols around the ghost pulse with an infinite “shine” animation, giving the illusion of flickering lights in a dark room. The ghost’s eyes, circular body, and bumpy bottom edges are all styled and aligned precisely to achieve a cartoon-like look. The “Go back” button features a soft gradient animation that slides when hovered, maintaining the playful tone. Overall, CSS is responsible for all shapes, colors, and smooth motion that define the ghost’s personality.
+
+<br>
 
 
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 //based on https://dribbble.com/shots/3913847-404-page
@@ -401,5 +421,7 @@ $(document).mousemove(function( event ) {
 });
 
 ```
+<br>
+
 
 The JavaScript script adds interactivity to the design, using jQuery to track the user’s mouse movement. It calculates the mouse’s position on the page and dynamically adjusts the translation of the ghost’s eyes using CSS transforms. As the cursor moves, the eyes appear to follow it, giving the ghost a sense of awareness and engagement. The vertical and horizontal positions are calculated relative to the window’s width and height, creating a realistic tracking effect. This simple yet clever interactivity enhances the user experience, making the ghost feel alive and responsive.

@@ -1,19 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <FaGithub />, url: "https://github.com/CodeWithLordDev/"},
-    // { icon: <FaLinkedin />, url: "https://linkedin.com/in/yourusername" },
-    // { icon: <FaTwitter />, url: "https://twitter.com/yourusername" },
+    { icon: <FaGithub />, url: "https://github.com/CodeWithLordDev/" },
     { icon: <FaInstagram />, url: "https://instagram.com/codewithlord" },
   ];
 
   return (
-    <footer className="relative bg-black/80 backdrop-blur-xl border-t border-white/20 py-6 px-8 flex flex-col md:flex-row items-center justify-between">
-      
-      {/* Left Side: Name / Copyright */}
+    <footer className="relative bg-black/80 backdrop-blur-xl border-t border-white/20 py-6 px-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+      {/* Left Side: Copyright */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,9 +21,29 @@ export default function Footer() {
         &copy; {new Date().getFullYear()} CodewithLord
       </motion.div>
 
+      {/* Middle: Policy Links */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-wrap items-center justify-center gap-4 text-gray-400 text-sm"
+      >
+        <a href="/PrivacyPolicy" className="hover:text-purple-400 transition-colors">
+          Privacy Policy
+        </a>
+        <span className="text-gray-600">|</span>
+        <a href="/terms" className="hover:text-purple-400 transition-colors">
+          Terms & Conditions
+        </a>
+        <span className="text-gray-600">|</span>
+        <a href="/Disclaimer" className="hover:text-purple-400 transition-colors">
+          Disclaimer
+        </a>
+      </motion.div>
+
       {/* Right Side: Social Icons */}
       <motion.div
-        className="flex gap-6 text-white text-2xl mt-4 md:mt-0"
+        className="flex gap-6 text-white text-2xl"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -43,6 +61,7 @@ export default function Footer() {
           </motion.a>
         ))}
       </motion.div>
+
     </footer>
   );
 }

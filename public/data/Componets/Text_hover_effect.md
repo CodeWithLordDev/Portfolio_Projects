@@ -8,8 +8,11 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 
 ## Description
 Create a stunning hover-based text reveal effect using pure HTML, CSS, SVG, and JavaScript — no external libraries required. This project displays a glowing multicolor gradient that follows your mouse cursor, revealing the text “CodewithLord” only when hovered. Perfect for modern portfolio websites, animated headers, or creative logo reveals with smooth transitions and interactive gradients.
+<br>
 
 ## Html code
+<br>
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -63,10 +66,11 @@ Create a stunning hover-based text reveal effect using pure HTML, CSS, SVG, and 
 </body>
 </html>
 ```
+<br>
 
 The text is rendered inside an SVG for precise control over gradients, strokes, and masking.
 
-The <defs> block defines:
+The (defs) block defines:
 
 linearGradient → Creates a rainbow-like color transition for the text.
 
@@ -74,14 +78,17 @@ radialGradient → Used as a mask that follows the mouse cursor.
 
 mask → Determines which part of the gradient text is visible based on the cursor position.
 
-There are two <text> elements:
+There are two (text) elements:
 
 .outline-text → A faint gray outline (visible all the time).
 
 .gradient-text → A colorful gradient text that only appears when hovered.
 
+<br>
 
 ## Css code
+<br>
+
 ```css
 body {
   margin: 0;
@@ -122,6 +129,7 @@ body {
   opacity: 1;
 }
 ```
+<br>
 
 The entire screen centers the text with a dark background for contrast.
 
@@ -131,8 +139,10 @@ Gives the background text a soft gray stroke, adding depth even when the gradien
 The main interactive layer — hidden by default (opacity: 0) and fades in on hover.
 On hover, the gradient text becomes visible
 This creates a smooth reveal transition when the user hovers over the SVG.
+<br>
 
 ## Javascript Code
+<br>
 
 ```js
 const svg = document.getElementById("text-hover-svg");
@@ -173,6 +183,7 @@ svg.addEventListener("mouseleave", () => {
 });
 ```
 
+<br>
 
 🖱️ Mouse Tracking
 Calculates the cursor’s position relative to the SVG.

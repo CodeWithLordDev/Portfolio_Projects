@@ -10,9 +10,12 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 ## 🧠 Description
 Fireworker Simulator lets you design, launch, and control dazzling fireworks displays with lifelike motion and vibrant particle effects. Built to simulate real pyrotechnics, it blends physics-based animation, colorful explosions, and interactive controls to create a stunning visual spectacle. Whether for fun, learning, or creative expression, this simulator delivers an immersive experience where every burst lights up the virtual sky in perfect sync and style.
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -156,6 +159,8 @@ Fireworker Simulator lets you design, launch, and control dazzling fireworks dis
 
 ```
 
+
+<br>
 
 
 ## CSS Code
@@ -492,8 +497,12 @@ body {
 }
 ```
 
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 'use strict';

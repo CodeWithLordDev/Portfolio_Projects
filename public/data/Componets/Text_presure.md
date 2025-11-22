@@ -8,8 +8,10 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 
 ## Description
 Create an eye-catching “Text Pressure” animation using pure JavaScript, CSS, and variable fonts. This effect dynamically adjusts font weight, width, and italics based on mouse movement, giving the illusion of text responding to user interaction. No external libraries required — just HTML, CSS, and JavaScript. Perfect for interactive web headers, hero sections, and modern typography experiments.
+<br>
 
 ## Html Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -28,16 +30,20 @@ Create an eye-catching “Text Pressure” animation using pure JavaScript, CSS,
 </body>
 </html>
 ```
+<br>
+
 The HTML sets up a minimal structure:
 
 A container (.text-container) centers the animated text.
 
-The <h1> tag (#textPressure) holds the animated letters, which are generated dynamically by JavaScript.
+The (h1) tag (#textPressure) holds the animated letters, which are generated dynamically by JavaScript.
 
 External CSS (style.css) and JS (script.js) files handle the styling and animation logic.
 
+<br>
 
 ## Css Code
+<br>
 
 ```css
 @font-face {
@@ -108,6 +114,7 @@ body {
   z-index: -1;
 }
 ```
+<br>
 
 Key parts of the CSS:
 
@@ -126,8 +133,10 @@ Responsive Scaling:
 The font-size uses viewport width (8vw) for scalability across devices.
 
 
+<br>
 
 ## Javascript code
+<br>
 
 ```js
 // =================== CONFIG ===================
@@ -233,6 +242,7 @@ function animate() {
 
 animate();
 ```
+<br>
 
 
 The config object defines customizable parameters

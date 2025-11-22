@@ -11,9 +11,11 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 Build a stunning 3D team carousel that lets users scroll, click, or swipe through team members with smooth animations. This project uses only HTML, CSS, and JavaScript — no frameworks — featuring depth effects, transitions, and adaptive mobile controls.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -106,6 +108,7 @@ Build a stunning 3D team carousel that lets users scroll, click, or swipe throug
 </html>
 
 ```
+<br>
 
 
 The HTML defines two main sections inside .main-container:
@@ -117,9 +120,11 @@ controls-section — displays navigation arrows, team member details (name & rol
 Each .card in .carousel-track represents a team member’s image, and the structure ensures only one card is centered at a time.
 The buttons (.nav-arrow.up and .nav-arrow.down) and .dot elements are connected to the carousel for navigation control.
 
+<br>
 
 
 ## CSS Code
+<br>
 
 ```css
 * {
@@ -607,6 +612,7 @@ body {
 }
 ```
 
+<br>
 
 
 The CSS provides a 3D layered illusion using transformations and depth effects:
@@ -624,9 +630,11 @@ The right side contains team member information (.member-info) with subtle anima
 Dots below the member info act as pagination indicators, and their color and size update dynamically based on which card is active.
 
 The design is fully responsive, with a restructured layout and resized cards on smaller screens.
+<br>
 
 
 ## Javascipt Code
+<br>
 
 ```javascript
 const teamMembers = [
@@ -777,6 +785,7 @@ function handleSwipe() {
 updateCarousel(0);
 ```
 
+<br>
 
 
 avaScript handles all the interactivity and carousel movement logic:

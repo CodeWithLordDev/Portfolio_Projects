@@ -11,9 +11,12 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 This project showcases a modern and responsive focus card grid that highlights user interaction through smooth hover animations. Built using HTML, CSS, and JavaScript, the layout dynamically generates image cards that blur out when one is hovered over, keeping focus on the active card with a glowing overlay and title. It’s ideal for showcasing portfolios, photo galleries, or product grids with minimal code and an elegant, professional look.
 
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -34,13 +37,19 @@ This project showcases a modern and responsive focus card grid that highlights u
 </html>
 
 ```
+<br>
+
 
 
 The HTML serves as the foundation for the card grid layout. It contains a simple page structure with a container div named cardsGrid, where all the image cards will be inserted dynamically using JavaScript. The page includes a link to an external CSS file for styling and a script tag that links to the JavaScript file that populates and animates the cards. By keeping the HTML minimal and using JavaScript for rendering, the design becomes flexible and easy to scale with more cards or dynamic content.
 
+<br>
+
 
 
 ## CSS Code
+<br>
+
 
 ```css
 body {
@@ -127,12 +136,20 @@ body {
 
 
 ```
+<br>
+
 
 The CSS defines the visual style and animation behavior of the focus cards. The page background is dark, with centered content and generous spacing for a clean, modern aesthetic. The cards-grid uses a CSS Grid layout, switching from a single-column structure on small screens to a three-column layout on larger devices, ensuring responsiveness. Each .card has a rounded, dark background and smooth transitions for transform and filter effects. When a card is hovered, it remains sharp and highlighted, while other cards are slightly blurred and scaled down, directing attention to the focused one. The .card-overlay adds a subtle dark gradient and reveals the card’s title during hover using a fade-in transition. The gradient text styling on .card-title gives a polished, modern effect, matching the project’s sleek UI.
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
+
+
 // Sample cards data
 const cards = [
   { title: "Card One", src: "https://picsum.photos/id/1011/600/400" },
@@ -249,5 +266,7 @@ function updateHoverEffects() {
 }
 
 ```
+<br>
+
 
 The JavaScript file controls how cards are created, displayed, and interact when hovered. It begins by defining an array of card data, each containing a title and image URL. Using forEach, it dynamically creates and injects cards into the HTML grid, each consisting of an image and overlay with text. Event listeners track when a user hovers over a card (mouseenter) or moves away (mouseleave), updating which card is currently focused. The updateHoverEffects() function handles the visual response — applying the blur effect to all non-hovered cards while activating the overlay and text on the hovered one. This logic creates a seamless and intuitive focus transition without requiring complex animations.

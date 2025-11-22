@@ -13,9 +13,13 @@ The switch visually transforms between states (ON/OFF) with animated facial move
 It’s a creative example of how advanced CSS features like custom properties, gradients, and pseudo-elements can be used to draw complex artwork and interactivity directly in the browser.
 
 
-␣␣
+<br>
+
+
 
 ## 💻 HTML Code
+<br>
+
 
 ```html
 <!DOCTYPE html>
@@ -82,17 +86,23 @@ It’s a creative example of how advanced CSS features like custom properties, g
 </body>
 </html>
 ```
+<br>
 
 
-Container: <div class="todo-container"> wraps all tasks in a card-like box.
 
-To-Do Item: Each task has a checkbox, label, and SVG line (<path>) below it.
+Container: "div class="todo-container"" wraps all tasks in a card-like box.
+
+To-Do Item: Each task has a checkbox, label, and SVG line "(path)" below it.
 
 SVG Path: The curvy path simulates a playful hand-drawn strike-through effect.
 
-Divider: <div class="divider"></div> separates each task for better readability.
+Divider:" div class="divider" div" separates each task for better readability.
+<br>
+
 
 ## CSS Code
+<br>
+
 
 ```css
 body {
@@ -153,6 +163,8 @@ body {
 }
 
 ```
+<br>
+
 
 Body Styling: Centers the list on a dark background.
 
@@ -165,8 +177,12 @@ SVG Line: Initially invisible (opacity: 0 and stroke-dashoffset: 700), then anim
 Transition: Creates a smooth “line-drawing” effect when toggled.
 
 Divider: Adds a subtle line between tasks for visual spacing.
+<br>
+
 
 ## Javascipt Code
+<br>
+
 
 ```javascript
 document.querySelectorAll('.checkbox').forEach((checkbox) => {
@@ -184,10 +200,12 @@ document.querySelectorAll('.checkbox').forEach((checkbox) => {
 });
 
 ```
+<br>
+
 
 Selector: Targets every element with the .checkbox class.
 
-Path Reference: Finds the SVG <path> inside the same todo item.
+Path Reference: Finds the SVG "path" inside the same todo item.
 
 Event Listener: When checkbox state changes (checked or not):
 

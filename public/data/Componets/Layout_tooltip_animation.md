@@ -11,9 +11,10 @@ tags: ["HTML", "CSS", "JavaScript", "SVG Animation"]
 Create a smooth and modern text flipping animation that dynamically changes words with a subtle blur and vertical slide effect. This project uses HTML, CSS, and vanilla JavaScript to rotate multiple phrases seamlessly — perfect for hero sections, landing pages, and portfolios. The elegant animation enhances user engagement by displaying changing text like “Landing Pages,” “Component Blocks,” and more in a visually appealing manner.
 
 
-␣␣
+<br>
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -37,25 +38,28 @@ Create a smooth and modern text flipping animation that dynamically changes word
 </html>
 
 ```
+<br>
 
 The HTML provides the structure of the animation.
 It contains:
 
-A main <div> with the class layout-text-flip, which holds two text parts:
+A main div with the class layout-text-flip, which holds two text parts:
 
 A static text — “Build Amazing”
 
 A rotating text container that wraps around the changing text — “Landing Pages”
 
-The <script> tag at the end links to the JavaScript file that controls the animation.
+The script tag at the end links to the JavaScript file that controls the animation.
 
-The <link> tag connects the CSS file for styling.
+The link tag connects the CSS file for styling.
 In short, HTML sets up the skeleton for displaying the static and animated parts of the text.
 
 
+<br>
 
 
 ## CSS Code
+<br>
 
 ```css
 body {
@@ -100,6 +104,7 @@ body {
 
 
 ```
+<br>
 
 The CSS defines the look and animation style of the text:
 
@@ -112,9 +117,11 @@ The .rotating-text-container hides overflowing text and defines the area where t
 The .rotating-text uses transition effects like translate, blur, and opacity to create a smooth sliding and fading motion when the text changes.
 Overall, CSS gives the animation a clean, modern, and glowing effect.
 
+<br>
 
 
 ## Javascipt Code
+<br>
 
 ```javascript
 const words = ["Landing Pages", "Component Blocks", "Page Sections", "3D Shaders"];
@@ -153,6 +160,7 @@ setInterval(showNextWord, duration);
 
 
 ```
+<br>
 
 The JavaScript adds interactivity and animation control:
 

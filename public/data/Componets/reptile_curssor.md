@@ -22,9 +22,11 @@ Creature physics (acceleration, rotation, friction) handled by the Creature clas
 The entire system updates and redraws the creature in real-time using requestAnimationFrame-like logic within timed intervals.
 As you move the mouse, the reptile crawls and adapts its direction fluidly — creating a lifelike interactive cursor effect that’s perfect for experimental animations, websites, or game prototypes.
 
-␣␣
+<br>
+
 
 ## 💻 HTML Code
+<br>
 
 ```html
 <!DOCTYPE html>
@@ -39,10 +41,13 @@ As you move the mouse, the reptile crawls and adapts its direction fluidly — c
 </body>
 </html>
 ```
+<br>
 
+<br>
 
 
 ## Javascipt Code
+<br>
 
 ```javascript
 // Input handling
@@ -626,8 +631,11 @@ var Input = {
   );
 
 ```
+<br>
 
 ⚙️ JavaScript Explanation
+<br>
+
 
 The JavaScript file handles the entire logic for the reptile animation. It begins by defining an input system that tracks keyboard and mouse events, including the state of keys, mouse buttons, and the current mouse position on the screen. This allows the creature to respond interactively as the user moves the cursor.
 
