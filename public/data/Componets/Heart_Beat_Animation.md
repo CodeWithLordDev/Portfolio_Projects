@@ -2,6 +2,7 @@
 title: "Heart Beat Animation"
 description: "A stunning CSS & SVG heart beat animation with pulsating veins, perfect for creating engaging UI effects."
 tags: ["CSS Animation", "SVG", "Heart", "Pulse", "Interactive", "Front-end"]
+image: "/Assets/data/images/Heart_Beat_Animation.png"
 author: "CodewithLord"
 date: "2025-11-22"
 ---
