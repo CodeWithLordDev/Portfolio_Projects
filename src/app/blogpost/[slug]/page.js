@@ -72,7 +72,7 @@ export default async function Page({ params }) {
         <div className="mt-14">
           {/* Back Button */}
         <Link
-          href="/components"
+          href="/blog"
           className="flex items-center gap-2 cursor-pointer text-gray-300 hover:text-white transition w-fit mb-4"
         >
           <ArrowLeft className="w-5 h-5" />
