@@ -6,7 +6,7 @@ export default function Footer() {
   const socialLinks = [
     { icon: <FaGithub />, url: "https://github.com/CodeWithLordDev/" },
     { icon: <FaInstagram />, url: "https://instagram.com/codewithlord" },
-    { icon: <FaYoutube />, href: "https://www.youtube.com/@CodewithLord" }, // Added YouTube
+    { icon: <FaYoutube />, url: "https://www.youtube.com/@CodewithLord" }, // Added YouTube
 
   ];
 
