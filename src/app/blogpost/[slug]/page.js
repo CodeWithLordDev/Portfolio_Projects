@@ -76,7 +76,7 @@ export default async function Page({ params }) {
           className="flex items-center gap-2 cursor-pointer text-gray-300 hover:text-white transition w-fit mb-4"
         >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-lg">Back to Components</span>
+          <span className="text-lg">Back to Blogs</span>
         </Link>
           <div className="w-full bg-black rounded-xl overflow-hidden flex justify-center items-center">
             <Image
