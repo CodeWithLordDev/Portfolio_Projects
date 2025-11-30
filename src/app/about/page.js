@@ -201,7 +201,7 @@ export default function Page() {
               className="p-6 rounded-2xl bg-[#1a1a2e]/50 border border-cyan-500/20 hover:border-cyan-500/50 transition-all"
             >
               <p className="text-gray-300 text-lg leading-relaxed">
-                Hey there! I'm{" "}
+                Hey there! I&apos;m{" "}
                 <span className="text-cyan-400 font-semibold">
                   Ayush Rajesh Temkar
                 </span>
@@ -231,7 +231,7 @@ export default function Page() {
                 <span className="text-blue-400">Tailwind CSS</span>, and{" "}
                 <span className="text-yellow-400">Framer Motion</span>. I love
                 transforming ideas into digital experiences that inspire and
-                engage users. Whether it's a smooth animation, a responsive
+                engage users. Whether it&apos;s a smooth animation, a responsive
                 layout, or a futuristic UI, I enjoy pushing boundaries to make
                 every project unique.
               </p>
@@ -245,7 +245,7 @@ export default function Page() {
               className="p-6 rounded-2xl bg-[#1a1a2e]/50 border border-pink-500/20 hover:border-pink-500/50 transition-all"
             >
               <p className="text-gray-500 text-base">
-                Beyond coding, I'm deeply interested in AI, UI/UX design, and
+                Beyond coding, I&apos;m deeply interested in AI, UI/UX design, and
                 video content creation for my YouTube channel{" "}
                 <span className="text-pink-400 font-semibold">
                   CodewithLord
