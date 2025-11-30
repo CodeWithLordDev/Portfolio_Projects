@@ -159,7 +159,7 @@ export default function Contact() {
             transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
             className="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-[length:200%_auto]"
           >
-            Let's Connect
+            Let &apos;s Connect
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -169,7 +169,7 @@ export default function Contact() {
             className="h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 mx-auto rounded-full"
           />
           <p className="text-white/60 mt-4 text-lg">
-            Have a project in mind? Let's make it happen! 🚀
+            Have a project in mind? Let&apos;s make it happen! 🚀
           </p>
         </motion.div>
 
@@ -187,7 +187,7 @@ export default function Contact() {
                 Get In Touch
               </h3>
               <p className="text-white/70 leading-relaxed mb-8">
-                I'm always open to discussing new projects, creative ideas, or
+                I&apos;m always open to discussing new projects, creative ideas, or
                 opportunities to be part of your visions. Feel free to reach out
                 through any of these channels!
               </p>
@@ -439,7 +439,7 @@ export default function Contact() {
                     exit={{ opacity: 0 }}
                     className="text-center p-4 rounded-xl bg-green-500/20 border border-green-500/50 text-green-300"
                   >
-                    Thanks for reaching out! I'll get back to you soon. 🎉
+                    Thanks for reaching out! I&apos;ll get back to you soon. 🎉
                   </motion.div>
                 )}
                 {status === "error" && (

@@ -218,7 +218,7 @@ export default function Hero() {
           
           {/* Button Content */}
           <div className="relative px-8 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold shadow-lg flex items-center gap-2">
-            <span>Let's Connect</span>
+            <span>Let&apos;s Connect</span>
             <motion.span
               animate={{ x: [0, 5, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
