@@ -16,7 +16,7 @@ export default function Contact() {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["stnart end", "ed start"],
+    offset: ["start end", "end start"],
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
