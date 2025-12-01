@@ -2,7 +2,7 @@ import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-// import ClientLayout from "./ClientLayout";
+import ClientLayout from "./ClientLayout";
 import { metadata } from "./metadata";
 import Script from "next/script";
 export { metadata };
@@ -53,9 +53,11 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-black text-white font-sans ${geistSans.variable} ${geistMono.variable}`}
       >
+        <ClientLayout>
           <Navbar />
           {children}
           <Footer />
+        </ClientLayout>
       </body>
     </html>
   );

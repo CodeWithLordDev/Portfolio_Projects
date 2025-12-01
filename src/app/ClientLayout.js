@@ -10,9 +10,29 @@ export default function ClientLayout({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 1800);
-    return () => clearTimeout(timeout);
+    // Wait for page to fully load
+    if (document.readyState === "complete") {
+      setLoading(false);
+    } else {
+      const handleLoad = () => setLoading(false);
+      window.addEventListener("load", handleLoad);
+      
+      // Fallback timeout (max 3 seconds)
+      const timeout = setTimeout(() => setLoading(false), 3000);
+      
+      return () => {
+        window.removeEventListener("load", handleLoad);
+        clearTimeout(timeout);
+      };
+    }
   }, []);
+
+  // Show loader when route changes
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(timeout);
+  }, [pathname]);
 
   return (
     <AnimatePresence mode="wait">
@@ -21,7 +41,7 @@ export default function ClientLayout({ children }) {
           key="loader"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
         >
           <Loader />
         </motion.div>
@@ -30,7 +50,7 @@ export default function ClientLayout({ children }) {
           key={pathname}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
           className="min-h-screen overflow-x-hidden"
         >
           {children}
