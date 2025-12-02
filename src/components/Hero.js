@@ -139,7 +139,7 @@ export default function Hero() {
       ))}
 
       {/* Main Content */}
-      <div className="relative z-10">
+      <div className="relative md:mt-12 z-10">
         {/* Heading with Enhanced Animation */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
