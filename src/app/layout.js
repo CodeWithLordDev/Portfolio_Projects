@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           rel="icon"
           type="image/png"
           sizes="512x512"
-          href="/Assets/Images/android-chrome-512x512.png"
+          href="/Assets/Images/CodewithLord1.png"
         />
         <title>CodewithLord</title>
         <meta name="author" content="CodewithLord" />

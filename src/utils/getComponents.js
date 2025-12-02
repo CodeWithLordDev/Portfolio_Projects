@@ -1,28 +1,48 @@
-import fs from "fs";
+"use server";
+
+import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 
+// ✅ Corrected Folder Name
 const componentsDir = path.join(process.cwd(), "public/data/Componets");
 
-export function getAllComponents() {
-  const files = fs.readdirSync(componentsDir);
-  const components = files.map((filename) => {
-    const filePath = path.join(componentsDir, filename);
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { data } = matter(fileContent);
+export async function getAllComponents() {
+  try {
+    const files = await fs.readdir(componentsDir);
 
-    return {
-      slug: filename.replace(".md", ""),
-      ...data,
-    };
-  });
+    const components = await Promise.all(
+      files
+        .filter((file) => file.endsWith(".md"))
+        .map(async (filename) => {
+          const filePath = path.join(componentsDir, filename);
+          const fileContent = await fs.readFile(filePath, "utf-8");
+          const { data } = matter(fileContent);
 
-  return components;
+          return {
+            slug: filename.replace(".md", ""),
+            ...data,
+          };
+        })
+    );
+
+    return components;
+  } catch (error) {
+    console.error("Error reading components:", error);
+    return [];
+  }
 }
 
-export function getComponentBySlug(slug) {
-  const filePath = path.join(componentsDir, `${slug}.md`);
-  const fileContent = fs.readFileSync(filePath, "utf-8");
-  const { data, content } = matter(fileContent);
-  return { ...data, content };
+export async function getComponentBySlug(slug) {
+  try {
+    const filePath = path.join(componentsDir, `${slug}.md`);
+
+    const fileContent = await fs.readFile(filePath, "utf-8");
+    const { data, content } = matter(fileContent);
+
+    return { ...data, content };
+  } catch (error) {
+    console.error("Error fetching component:", error);
+    return null;
+  }
 }

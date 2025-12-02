@@ -230,26 +230,7 @@ export default function Navbar() {
               })}
             </div>
 
-            {/* Mobile Footer with Social Icons */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              className="mt-6 pt-6 border-t border-white/10"
-            >
-              <div className="flex justify-center gap-3">
-                {["💼", "🐙", "🎬", "✉️"].map((emoji, i) => (
-                  <motion.button
-                    key={i}
-                    whileHover={{ scale: 1.2, rotate: 360 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all"
-                  >
-                    {emoji}
-                  </motion.button>
-                ))}
-              </div>
-            </motion.div>
+            
           </motion.div>
         </>
       )}
