@@ -1,6 +1,6 @@
 export default function BackgroundGrid() {
   return (
-    <>
+    <div className="absolute inset-0 overflow-hidden">
       {/* Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:40px_40px] opacity-20" />
 
@@ -21,6 +21,6 @@ export default function BackgroundGrid() {
 
       {/* Radial Gradient Overlay */}
       <div className="absolute inset-0 bg-radial-gradient(circle, transparent 0%, rgba(0, 0, 0, 0.3) 100%)" />
-    </>
+    </div>
   );
 }

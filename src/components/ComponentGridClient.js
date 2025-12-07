@@ -29,7 +29,7 @@ export default function ComponentGridClient({ shown }) {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           
-          <h1 className="text-3xl md:text-5xl font-bold text-center">
+          <h1 className="text-3xl md:text-5xl mt-14 font-bold text-center">
             UI Components
             <span className="text-gray-600">.</span>
           </h1>
