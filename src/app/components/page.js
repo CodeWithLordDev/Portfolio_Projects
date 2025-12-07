@@ -7,15 +7,20 @@ import PaginationClient from "../../components/PagniationClient";
 export default async function ComponentsPage({ searchParams }) {
 
   // ✅ Await the component data
+
+  const params = await searchParams;
+  const page = parseInt(params?.page || "1", 10);
+
+
   const components = await getAllComponents();
 
   const perPage = 6;
   const totalPages = Math.ceil(components.length / perPage);
 
   // ✅ Proper searchParams usage (safe in server component)
-  const currentPage = parseInt(searchParams?.page || "1", 10);
+  // const currentPage = parseInt(searchParams?.page || "1", 10);
 
-  const startIndex = (currentPage - 1) * perPage;
+  const startIndex = (page - 1) * perPage;
   const shown = components.slice(startIndex, startIndex + perPage);
 
   const containerVariants = {
@@ -44,7 +49,7 @@ export default async function ComponentsPage({ searchParams }) {
 
        {/* 👇 Client Component Here */}
         <ComponentGridClient shown={shown} />
-        <PaginationClient currentPage={currentPage} 
+        <PaginationClient currentPage={page} 
             totalPages={totalPages}/>
 
       
