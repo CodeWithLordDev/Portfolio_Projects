@@ -1,7 +1,7 @@
 ---
 title: "Pure CSS Parallax Scrolling – Advanced 3D Perspective Animation (No JavaScript Required)"
 description: "A complete technical breakdown of pure CSS parallax scrolling using 3D perspective, transform-style preserve-3d, and translateZ. Create stunning depth effects with multiple layers moving at different speeds using only CSS."
-image: "/Assets/data/images/pure_css_parallelx_scroll.png"
+image: "/Assets/data/images/Pure_css_prallelx_scroll.png"
 tags: ["HTML", "CSS", "3D Transforms", "Parallax", "Perspective", "No JavaScript"]
 author: "CodewithLord"
 date: "2025-12-15"
