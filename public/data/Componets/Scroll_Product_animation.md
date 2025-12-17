@@ -1,7 +1,7 @@
 ---
 title: "Scooter Animation with GSAP ScrollTrigger – Advanced Scroll-Driven Timeline Animation (Liberty 150)"
 description: "A complete technical breakdown of an interactive scooter product showcase using GSAP ScrollTrigger. Features coordinated scroll-driven animations, SVG clipping, timeline sequencing, and dynamic product reveals with specifications."
-image: "/Assets/data/images/Scroll_Product_animation.png"
+image: "/Assets/data/images/Scroll_Product_anaimation.png"
 tags: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "Timeline Animation", "SVG Clipping"]
 author: "CodewithLord"
 date: "2025-12-15"
