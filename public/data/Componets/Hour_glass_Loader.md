@@ -7,12 +7,17 @@ author: "CodewithLord"
 date: "2025-12-20"
 ---
 
-## Description
+## *Description*
+<br>
 
 This project showcases an **animated hourglass preloader** created entirely with **SVG and CSS**, without any JavaScript.  
 The animation simulates realistic sand flow, glass flipping, glare highlights, and circular motion strokes—making it ideal for **loading screens, splash screens, and creative UI transitions**.
+<br>
 
-Key highlights:
+**Key highlights**:
+
+<br>
+
 - Pure SVG-based vector animation
 - CSS-driven timing and easing
 - Sand grain, mound, and drop simulation
@@ -23,6 +28,7 @@ Key highlights:
 The animation loops seamlessly and is optimized for modern browsers.
 
 ---
+<br>
 
 ## HTML
 
@@ -508,7 +514,7 @@ body {
 ```
 <br>
 
-### How It Works
+### *How It Works*
 <br>
 
 1. **SVG as the Animation Engine**
@@ -546,7 +552,7 @@ Three rotating circular strokes act as progress indicators
 Different stroke widths create depth
 <br>
 
-## Key Features
+## **Key Features**
 <br>
 
 ⏳ Pure SVG + CSS (no JavaScript)
@@ -562,7 +568,7 @@ Different stroke widths create depth
 ⚡ Lightweight and performant
 <br>
 
-# Use Cases
+# **Use Cases**
 
 Website preloaders
 

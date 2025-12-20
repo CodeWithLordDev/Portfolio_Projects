@@ -14,7 +14,9 @@ This project creates a **cinematic magma-like particle field** using **Three.js*
 The visual is driven entirely on the GPU and combines **procedural geometry**, **shader-based morphing**, and **interactive force feedback**.
 <br>
 
-Key characteristics:
+**Key characteristics**:
+<br>
+
 - Golden-angle spiral particle distribution
 - Procedural morphing patterns for organic motion
 - Mouse-driven velocity-based particle displacement
@@ -470,6 +472,7 @@ Fragment shader creates soft circular sprites
 
 Time-based shimmer for heat distortion feel
 <br>
+<br>
 
 ## Key Features
 <br>
@@ -487,6 +490,7 @@ Time-based shimmer for heat distortion feel
 🎥 Cinematic camera motion
 
 ⚡ GPU-accelerated rendering
+<br>
 <br>
 
 # Use Cases

@@ -9,12 +9,17 @@ date: "2025-12-16"
 
 
 
-## 🧠 Description
+## *🧠 Description*
+<br>
+
 This project showcases a **highly creative animated toggle switch** designed to look like a real egg cracking open when toggled.
 Built entirely with **HTML and CSS**, it uses advanced techniques such as **3D transforms, keyframe animations, clip-paths, and SVG icons** to simulate a realistic cracking egg and flipper motion.
+<br>
 
-When the switch is toggled:
-- The egg rolls and cracks open
+**When the switch is toggled**:
+<br-
+
+ The egg rolls and cracks open
 - The shell splits into pieces
 - The egg white and yolk animate smoothly
 - A flipper SVG animates in and out for extra personality

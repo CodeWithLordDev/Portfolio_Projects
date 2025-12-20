@@ -7,7 +7,7 @@ author: "CodewithLord"
 date: "2025-12-17"
 ---
 
-## 📌 Description
+## *📌 Description*
 <br>
 This project demonstrates an **interactive scratch-based visual experience** using an HTML `<canvas>` element designed for **fluid and GPU-accelerated effects**.  
 Users are encouraged to *“scratch”* the canvas area to reveal dynamic visuals, creating a magical and engaging interaction.
@@ -15,13 +15,16 @@ Users are encouraged to *“scratch”* the canvas area to reveal dynamic visual
 Additionally, a **modern light/dark theme switcher** is implemented using radio inputs and SVG icons, allowing seamless theme transitions with a visually rich UI.
 <br>
 
-Key highlights include:
+**Key highlights include:**
+<br>
+
 - WebGPU-ready fluid canvas setup
 - Minimal and semantic HTML structure
 - Accessible theme switcher with SVG icons
 - Scalable layout for creative hero sections
 
 ---
+<br>
 
 ## 🧱 HTML Structure
 <br>
@@ -95,6 +98,7 @@ The HTML layout is divided into **three main sections**:
 
 ### 🎨 CSS Overview
 <br>
+
 The CSS (linked via style.css) is responsible for:
 
 Full-screen hero layout

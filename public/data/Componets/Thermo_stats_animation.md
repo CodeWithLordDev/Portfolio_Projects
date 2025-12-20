@@ -8,11 +8,15 @@ date: "2025-12-20"
 ---
 
 ## Description
+<br>
 
 This project implements a **high-end interactive glass thermostat UI** inspired by physical temperature gauges and futuristic control panels.  
 It combines **glassmorphism**, **SVG displacement filters**, and **GSAP-powered interactions** to create a tactile, visually rich experience.
+<br>
 
-Key highlights:
+**Key highlights**:
+<br>
+
 - Draggable temperature knob with inertia
 - Plasma-like mercury fill using SVG turbulence
 - Dynamic gradient-based temperature coloring
@@ -618,6 +622,7 @@ window.addEventListener("resize", () => {
 
 1. **Glassmorphism Structure**
 <br>
+
 Frosted glass effect using backdrop-filter
 
 Noise texture overlay for realism
@@ -655,7 +660,7 @@ Particle density increases as temperature drops
 <br>
 
 ## Key Features
-
+<br>
 ❄️ Temperature-aware snow particles
 
 🧊 Glassmorphism UI design
@@ -672,6 +677,7 @@ Particle density increases as temperature drops
 <br> 
 
 # Use Cases
+<br>
 
 Smart thermostat UI concepts
 

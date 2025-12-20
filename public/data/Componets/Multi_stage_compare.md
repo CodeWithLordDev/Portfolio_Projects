@@ -7,11 +7,14 @@ author: "CodewithLord"
 date: "2025-12-19"
 ---
 
-## Description
-
+## *Description*
+<br>
 This project demonstrates a **fully scroll-driven multi-stage image comparator** powered primarily by **modern CSS**, with JavaScript used only for measurement, smoothing, and navigation logic.
+<br>
 
-Unlike traditional before/after sliders, this system:
+**Unlike traditional before/after sliders, this system**:
+<br>
+
 - Uses **scroll position as the timeline**
 - Automatically adapts to any number of image layers
 - Calculates animation ranges using `sibling-index()` and `sibling-count()`
@@ -20,6 +23,7 @@ Unlike traditional before/after sliders, this system:
 The result is a **scalable, declarative, and future-forward comparator system** ideal for editorial storytelling, case studies, and immersive visual narratives.
 
 ---
+<br>
 
 ## HTML
 
@@ -920,7 +924,7 @@ links;
 
 <br>
 
-### How It Works
+# How It Works
 <br>
 
 1. **Scroll as the Timeline**
