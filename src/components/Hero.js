@@ -145,7 +145,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          className="text-5xl md:text-7xl font-extrabold text-white drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]"
+          className="text-5xl md:text-7xl sm:mt-12 md:mt-12 font-extrabold text-white drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]"
         >
           Hey, I&apos;m{" "}
           <motion.span
