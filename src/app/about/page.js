@@ -28,22 +28,16 @@ export default function Page() {
     <section
       ref={containerRef}
       id="about"
-      className="relative min-h-screen flex flex-col justify-center items-center px-6 py-20  text-white overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10 py-12 sm:py-16 md:py-20 text-white overflow-hidden"
     >
-      {/* Background gradient
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#111111] to-black pointer-events-none" />
-
-      {/* Grid Pattern Overlay */}
-      {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:50px_50px] opacity-20 pointer-events-none" /> */} 
-
-      {/* Floating Glow Orbs with Parallax */}
+      {/* Floating Glow Orbs with Parallax - Responsive Sizing */}
       <motion.div
         style={{ y: y1 }}
-        className="absolute w-80 h-80 bg-purple-500/30 rounded-full blur-3xl top-24 left-16 animate-pulse pointer-events-none"
+        className="absolute w-40 sm:w-56 md:w-72 lg:w-80 h-40 sm:h-56 md:h-72 lg:h-80 bg-purple-500/30 rounded-full blur-3xl top-8 sm:top-12 md:top-16 lg:top-24 left-4 sm:left-8 md:left-12 lg:left-16 animate-pulse pointer-events-none"
       />
       <motion.div
         style={{ y: y2 }}
-        className="absolute w-72 h-72 bg-cyan-500/25 rounded-full blur-3xl bottom-24 right-16 animate-pulse pointer-events-none"
+        className="absolute w-36 sm:w-52 md:w-64 lg:w-72 h-36 sm:h-52 md:h-64 lg:h-72 bg-cyan-500/25 rounded-full blur-3xl bottom-8 sm:bottom-12 md:bottom-16 lg:bottom-24 right-4 sm:right-8 md:right-12 lg:right-16 animate-pulse pointer-events-none"
       />
 
       {/* Animated Particles */}
@@ -65,7 +59,7 @@ export default function Page() {
             delay: Math.random() * 2,
             ease: "easeOut",
           }}
-          className="absolute w-1 h-1 bg-purple-400 rounded-full pointer-events-none"
+          className="absolute w-0.5 h-0.5 sm:w-1 sm:h-1 bg-purple-400 rounded-full pointer-events-none"
         />
       ))}
 
@@ -75,16 +69,16 @@ export default function Page() {
         initial={{ opacity: 0, y: 80 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="relative z-10 max-w-5xl w-full"
+        className="relative z-10 max-w-7xl w-full"
       >
-        {/* Animated Title */}
-        <div className="text-center mb-12">
+        {/* Animated Title - Responsive Font Sizes */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 px-2">
           <motion.h2
             animate={{
               backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
             }}
             transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-            className="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-[length:200%_auto]"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-[length:200%_auto]"
             style={{
               textShadow: "0 0 30px rgba(168, 85, 247, 0.3)",
             }}
@@ -93,30 +87,30 @@ export default function Page() {
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
-            whileInView={{ width: "120px" }}
+            whileInView={{ width: "80px sm:120px" }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 mx-auto rounded-full"
+            className="h-0.5 sm:h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 mx-auto rounded-full"
           />
         </div>
 
-        {/* Profile Section with Interactive Card */}
-        <div className="grid lg:grid-cols-5 gap-8 mb-16">
-          {/* Left: Avatar Card */}
+        {/* Profile Section - Responsive Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 mb-12 sm:mb-16">
+          {/* Left: Avatar Card - Responsive Width */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-2"
+            className="md:col-span-2 flex justify-center md:justify-start"
           >
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="relative group"
+              className="relative group w-full max-w-sm"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-pink-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all" />
-              <div className="relative p-8 rounded-3xl bg-gradient-to-br from-[#1a1a2e]/80 to-[#16213e]/80 border border-purple-500/30 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-pink-600/30 rounded-2xl sm:rounded-3xl blur-xl group-hover:blur-2xl transition-all" />
+              <div className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#1a1a2e]/80 to-[#16213e]/80 border border-purple-500/30 overflow-hidden">
                 {/* Animated Scan Line */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-400/10 to-transparent"
@@ -125,7 +119,7 @@ export default function Page() {
                 />
 
                 <div className="relative z-10">
-                  {/* Avatar */}
+                  {/* Avatar - Responsive Size */}
                   <motion.div
                     initial={{ scale: 0, rotate: -180 }}
                     whileInView={{ scale: 1, rotate: 0 }}
@@ -136,24 +130,24 @@ export default function Page() {
                       stiffness: 200,
                     }}
                     whileHover={{ rotate: [0, -10, 10, 0] }}
-                    className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500 p-1 cursor-pointer"
+                    className="w-24 sm:w-28 md:w-32 h-24 sm:h-28 md:h-32 mx-auto mb-4 sm:mb-6 rounded-full bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500 p-1 cursor-pointer"
                   >
-                    <div className="w-full h-full rounded-full bg-[#0d0d0d] flex items-center justify-center text-6xl">
+                    <div className="w-full h-full rounded-full bg-[#0d0d0d] flex items-center justify-center text-4xl sm:text-5xl md:text-6xl">
                       👨‍💻
                     </div>
                   </motion.div>
 
-                  <h3 className="text-2xl font-bold text-center mb-2">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
                       Ayush Rajesh Temkar
                     </span>
                   </h3>
-                  <p className="text-white/60 text-center text-sm mb-6 italic">
+                  <p className="text-white/60 text-center text-xs sm:text-sm mb-6 italic">
                     Front-End Developer & Creative Coder
                   </p>
 
-                  {/* Animated Stats */}
-                  <div className="grid grid-cols-3 gap-3">
+                  {/* Animated Stats - Responsive Grid */}
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
                     {[
                       { label: "Projects", value: "15+", delay: 0.3 },
                       { label: "Experience", value: "2 Yrs", delay: 0.4 },
@@ -169,12 +163,12 @@ export default function Page() {
                           scale: 1.1,
                           boxShadow: "0 0 20px rgba(168, 85, 247, 0.3)",
                         }}
-                        className="text-center p-3 rounded-xl bg-[#0f172a] border border-purple-500/20 cursor-pointer"
+                        className="text-center p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#0f172a] border border-purple-500/20 cursor-pointer"
                       >
-                        <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+                        <div className="text-lg sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
                           {stat.value}
                         </div>
-                        <div className="text-xs text-white/60 mt-1">
+                        <div className="text-xs text-white/60 mt-0.5 sm:mt-1">
                           {stat.label}
                         </div>
                       </motion.div>
@@ -185,22 +179,23 @@ export default function Page() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Description */}
+          {/* Right: Description - Responsive Text */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-3 space-y-6"
+            className="md:col-span-3 space-y-4 sm:space-y-6"
           >
+            {/* Description Box 1 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="p-6 rounded-2xl bg-[#1a1a2e]/50 border border-cyan-500/20 hover:border-cyan-500/50 transition-all"
+              className="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-[#1a1a2e]/50 border border-cyan-500/20 hover:border-cyan-500/50 transition-all"
             >
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
                 Hey there! I&apos;m{" "}
                 <span className="text-cyan-400 font-semibold">
                   Ayush Rajesh Temkar
@@ -216,14 +211,15 @@ export default function Page() {
               </p>
             </motion.div>
 
+            {/* Description Box 2 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="p-6 rounded-2xl bg-[#1a1a2e]/50 border border-purple-500/20 hover:border-purple-500/50 transition-all"
+              className="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-[#1a1a2e]/50 border border-purple-500/20 hover:border-purple-500/50 transition-all"
             >
-              <p className="text-gray-400 text-base leading-relaxed">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                 My tech stack includes{" "}
                 <span className="text-cyan-400">JavaScript</span>,{" "}
                 <span className="text-purple-400">React</span>,{" "}
@@ -232,19 +228,19 @@ export default function Page() {
                 <span className="text-yellow-400">Framer Motion</span>. I love
                 transforming ideas into digital experiences that inspire and
                 engage users. Whether it&apos;s a smooth animation, a responsive
-                layout, or a futuristic UI, I enjoy pushing boundaries to make
-                every project unique.
+                layout, or a futuristic UI, I enjoy pushing boundaries.
               </p>
             </motion.div>
 
+            {/* Description Box 3 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="p-6 rounded-2xl bg-[#1a1a2e]/50 border border-pink-500/20 hover:border-pink-500/50 transition-all"
+              className="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-[#1a1a2e]/50 border border-pink-500/20 hover:border-pink-500/50 transition-all"
             >
-              <p className="text-gray-500 text-base">
+              <p className="text-gray-500 text-sm sm:text-base">
                 Beyond coding, I&apos;m deeply interested in AI, UI/UX design, and
                 video content creation for my YouTube channel{" "}
                 <span className="text-pink-400 font-semibold">
@@ -257,18 +253,18 @@ export default function Page() {
           </motion.div>
         </div>
 
-        {/* Interactive Skill Tags with Progress */}
+        {/* Interactive Skill Tags - Responsive Grid */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-16"
+          className="mt-12 sm:mt-16 px-2"
         >
-          <h3 className="text-3xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
             Tech Stack & Skills
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
@@ -291,13 +287,13 @@ export default function Page() {
               >
                 {/* Glow Effect */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-20 rounded-2xl blur-xl transition-opacity`}
+                  className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-20 rounded-lg sm:rounded-2xl blur-xl transition-opacity`}
                 />
 
                 {/* Card */}
-                <div className="relative p-5 rounded-2xl bg-[#1a1a2e]/70 border border-white/10 group-hover:border-white/30 transition-all overflow-hidden">
+                <div className="relative p-3 sm:p-5 rounded-lg sm:rounded-2xl bg-[#1a1a2e]/70 border border-white/10 group-hover:border-white/30 transition-all overflow-hidden">
                   {/* Progress Bar Background */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 sm:h-1 bg-white/10">
                     <motion.div
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
@@ -307,23 +303,22 @@ export default function Page() {
                     />
                   </div>
 
-                  <div className="text-white font-semibold text-center text-sm">
+                  <div className="text-white font-semibold text-center text-xs sm:text-sm">
                     {skill.name}
                   </div>
-                  <div className="text-center text-xs text-white/40 mt-1">
+                  <div className="text-center text-xs text-white/40 mt-0.5 sm:mt-1">
                     {skill.level}%
                   </div>
                 </div>
 
-                {/* Tooltip */}
+                {/* Tooltip - Responsive Position */}
                 {hoveredSkill === skill.name && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 rounded-lg bg-black/90 border border-white/20 text-white text-xs whitespace-nowrap z-20"
+                    className="absolute -top-10 sm:-top-12 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 sm:py-2 rounded-lg bg-black/90 border border-white/20 text-white text-xs whitespace-nowrap z-20"
                   >
                     Proficiency: {skill.level}%
-                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 rotate-45 border-r border-b border-white/20" />
                   </motion.div>
                 )}
               </motion.div>
@@ -332,14 +327,14 @@ export default function Page() {
         </motion.div>
       </motion.div>
 
-      {/* Enhanced Floating Shapes */}
+      {/* Enhanced Floating Shapes - Responsive Sizing */}
       <motion.div
         animate={{
           y: [0, -30, 0],
           rotate: [12, 22, 12],
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-2xl border border-white/10 pointer-events-none"
+        className="absolute top-1/2 left-1/4 w-16 sm:w-24 md:w-32 h-16 sm:h-24 md:h-32 bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-lg sm:rounded-2xl border border-white/10 pointer-events-none"
       />
       <motion.div
         animate={{
@@ -347,7 +342,7 @@ export default function Page() {
           scale: [1, 1.2, 1],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-        className="absolute top-1/3 right-1/4 w-40 h-40 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-md rounded-full border border-white/5 pointer-events-none"
+        className="absolute top-1/3 right-1/4 w-20 sm:w-28 md:w-40 h-20 sm:h-28 md:h-40 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-md rounded-full border border-white/5 pointer-events-none"
       />
     </section>
   );
