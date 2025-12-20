@@ -1,7 +1,7 @@
 ---
 title: "CSS Scroll-Driven Multi-Stage Image Comparator"
 description: "An advanced scroll-driven multi-stage image comparator built with modern CSS features like scroll-timeline, animation-range, sibling-index(), and @property. The system automatically synchronizes layered image reveals, divider motion, percentage counters, and stage navigation with minimal JavaScript."
-image: "/Assets/Images/Multi_stage_compare.png"
+image: "/Assets/data/images/Multi_stage_compare.png"
 tags: ["CSS Scroll Animations", "scroll-timeline", "Image Comparator", "Creative CSS", "UI Interaction"]
 author: "CodewithLord"
 date: "2025-12-19"

@@ -1,7 +1,7 @@
 ---
 title: "Interactive Scratch-to-Reveal Fluid Canvas with Light/Dark Theme Switcher"
 description: "An interactive scratch-to-reveal web experience using a WebGPU-powered fluid canvas, combined with a modern light/dark theme switcher and SVG-based UI controls."
-image: "/Assets/Images/Fluid_motion.png"
+image: "/Assets/data/images/Fluid_motion.png"
 tags: ["HTML", "Canvas", "WebGPU", "UI Design", "Theme Switcher", "Interactive Effects"]
 author: "CodewithLord"
 date: "2025-12-17"

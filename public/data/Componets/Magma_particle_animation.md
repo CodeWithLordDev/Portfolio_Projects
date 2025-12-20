@@ -1,7 +1,7 @@
 ---
 title: "Magma Particle Field with Shockwave Interaction using Three.js"
 description: "A high-density GPU-accelerated magma-inspired particle field built with Three.js and custom GLSL shaders. Features spiral-based particle distribution, morphing procedural motion, mouse-driven force interaction, shockwave ripples, additive glow blending, and cinematic camera movement."
-image: "/Assets/Images/Magma_particle_animation.png"
+image: "/Assets/data/images/Magma_particle_animation.png"
 tags: ["Three.js", "GLSL", "Particles", "ShaderMaterial", "Creative Coding", "WebGL"]
 author: "CodewithLord"
 date: "2025-12-18"

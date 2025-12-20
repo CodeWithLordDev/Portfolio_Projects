@@ -1,7 +1,7 @@
 ---
 title: "Interactive Glass Thermostat UI with GSAP & SVG Effects"
 description: "A futuristic glassmorphism-based thermostat UI built with HTML, CSS, SVG filters, and GSAP. Features a draggable temperature knob, plasma-like mercury animation, dynamic color gradients, animated scale markings, and snow particle effects below freezing."
-image: "/Assets/Images/Thermo_stats_animation.png"
+image: "/Assets/data/images/Thermo_stats_animation.png"
 tags: ["Glassmorphism", "GSAP", "Draggable", "UI Animation", "SVG Filters", "Interactive UI"]
 author: "CodewithLord"
 date: "2025-12-20"

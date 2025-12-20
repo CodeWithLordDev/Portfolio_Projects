@@ -1,7 +1,7 @@
 ---
 title: "Animated Hourglass Preloader Using Pure SVG & CSS"
 description: "A visually rich hourglass preloader built using pure SVG and CSS animations. Features sand flow simulation, glass flipping motion, circular progress strokes, glare effects, and theme-aware color handling."
-image: "/Assets/Images/Hour_glass_Loader.png"
+image: "/Assets/data/images/Hour_glass_Loader.png"
 tags: ["SVG Animation", "CSS Animation", "Preloader", "UI Animation", "Frontend", "Loader Design"]
 author: "CodewithLord"
 date: "2025-12-20"
