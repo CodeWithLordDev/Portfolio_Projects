@@ -155,9 +155,9 @@ export default function Hero() {
             </span>
           </a>
 
-          <a href="#projects" className="btn btn-secondary">
+          <a href="#components" className="btn btn-secondary">
             <span className="btn-fill" />
-            <span className="btn-content">View Projects</span>
+            <span className="btn-content">View Components</span>
           </a>
         </div>
 
