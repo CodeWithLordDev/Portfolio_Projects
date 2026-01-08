@@ -1,7 +1,7 @@
 ---
 title: "GSAP ScrollTrigger Panels – Smooth Pin & Scale Scroll Animation"
 description: "A modern GSAP ScrollTrigger animation where fullscreen panels pin, scale down, and fade smoothly on scroll using pure HTML, CSS, and JavaScript."
-image: "/Assets/data/images/gsap_pane;_scroll.png_"
+image: "/Assets/data/images/gsap_panel_scroll.png"
 tags: ["GSAP", "ScrollTrigger", "JavaScript Animation", "Scroll Animation", "Frontend", "UI Animation"]
 author: "CodewithLord"
 date: "2025-12-20"

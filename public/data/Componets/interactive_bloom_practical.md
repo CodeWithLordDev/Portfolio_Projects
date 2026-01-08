@@ -1,7 +1,7 @@
 ---
 title: "Interactive Bloom Particle Field – Three.js + Unreal Bloom"
 description: "A high-performance interactive particle field built with Three.js featuring Unreal Bloom post-processing, mouse-driven forces, ripple interactions, layered particle systems, and cinematic camera motion."
-image: "/Assets/data/images/interactive_bloom_practical.png"
+image: "/Assets/data/images/Interactive_bloom_practical.png"
 tags: ["Three.js", "WebGL", "Particles", "Unreal Bloom", "Creative Coding", "JavaScript", "Interactive Art"]
 author: "CodewithLord"
 date: "2025-12-18"
