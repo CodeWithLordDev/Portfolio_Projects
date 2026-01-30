@@ -1,7 +1,7 @@
 ---
 title: "CSS Only Crying Baby 404 Error Page Animation"
 description: "A creative CSS-only 404 error page featuring a crying baby illustration inside a circular frame, animated with pure CSS keyframes including floating motion, mouth movement, and falling tear drops."
-image: "/Assets/data/images/404_Cry_baby_errorsee.png"
+image: "/Assets/data/images/404_Cry_baby_error.png"
 tags: ["HTML", "CSS", "CSS Animation", "404 Page"]
 author: "CodewithLord"
 date: "2026-01-8"
