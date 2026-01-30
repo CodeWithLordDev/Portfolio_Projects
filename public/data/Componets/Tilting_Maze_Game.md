@@ -1,7 +1,7 @@
 ---
 title: "Tilting Maze Game - Interactive 3D Physics"
 description: "An interactive tilting maze game with advanced 3D physics simulation. Players tilt the maze using mouse controls to roll balls toward the center goal. Features collision detection, gravity simulation, wall interactions, hard mode with hazards, and responsive joystick controls using 3D transforms."
-image: "/Assets/data/images/Tilting_Maze_Game.png"
+image: "/Assets/data/images/Tilting_Maze_game.png"
 tags: ["HTML", "CSS", "JavaScript", "Game Development", "3D Graphics", "Physics Simulation", "Collision Detection", "Interactive Game"]
 author: "CodewithLord"
 date: "2026-01-30"

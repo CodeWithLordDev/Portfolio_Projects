@@ -1,7 +1,7 @@
 ---
 title: "Animated SVG Flowers Illustration with Pure HTML & CSS"
 description: "A beautifully detailed animated SVG flowers illustration built using pure HTML and CSS, featuring hand-drawn vector paths, organic strokes, leaves, buds, and floral elements for creative web designs."
-image: "/Assets/data/images/FLower_Animation.png"
+image: "/Assets/data/images/Flower_Animation.png"
 tags: ["HTML", "CSS", "SVG", "Animation", "Illustration"]
 author: "CodewithLord"
 date: "2026-01-20"
@@ -37,7 +37,7 @@ Because it’s vector-based, the animation remains sharp and scalable on all scr
 
 <head>
 	<meta charset="UTF-8">
-	<title>Flowers Animation | @coding.stella</title>
+	<title>Flowers Animation | CodewithLord</title>
 	<link rel="stylesheet" href="./style.css">
 </head>
 

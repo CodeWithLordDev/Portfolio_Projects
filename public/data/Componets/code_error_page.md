@@ -1,7 +1,7 @@
 ---
 title: "Matrix News Reader – Real-Time Hacker Style Canvas Feed"
 description: "A Matrix-inspired news reader built with HTML Canvas, CSS effects, and JavaScript that streams Reddit headlines with a green terminal-style typing animation and digital rain background."
-image: "/Assets/data/images/code_error_page.png"
+image: "/Assets/data/images/matrix_code_error_page.png"
 tags: ["Canvas", "JavaScript", "Matrix Effect", "Creative Coding", "UI Animation", "Hacker UI", "News Feed"]
 author: "CodewithLord"
 date: "2026-01-03"

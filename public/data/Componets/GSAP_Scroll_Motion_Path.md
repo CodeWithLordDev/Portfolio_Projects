@@ -1,7 +1,7 @@
 ---
 title: "GSAP Scroll Motion Path Animation"
 description: "An interactive scroll-triggered animation using GSAP MotionPathPlugin that animates an element along a custom motion path defined by multiple waypoints. Features smooth scroll synchronization with ScrollTrigger and dynamic responsive calculations."
-image: "/Assets/data/images/gsap_motion_path.png"
+image: "/Assets/data/images/Motion_Path.png"
 tags: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "MotionPath", "Animation", "Scroll Animation"]
 author: "CodewithLord"
 date: "2026-01-30"
