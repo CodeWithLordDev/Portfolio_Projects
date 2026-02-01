@@ -4,7 +4,7 @@ description: "Learn how to start a blog in 2026 with this complete step-by-step 
 slug: "how-to-start-a-blog-in-2026"
 author: "CodewithLord"
 date: "2026-01-15"
-image: "/Assets/src/how-to-start-a-blog-2026.png"
+image: "/Assets/src/how-to-start-a-blog-2026.jpeg"
 tags:
   - Blogging
   - Blogging for Beginners

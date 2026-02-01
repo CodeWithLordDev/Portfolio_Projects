@@ -4,7 +4,7 @@ description: "A complete step-by-step web development roadmap from beginner to p
 slug: "web-development-roadmap-beginner-to-pro"
 author: "CodewithLord"
 date: "2026-01-15"
-image: "/Assets/src/web-development-roadmap-2026.png"
+image: "/Assets/src/web-development-roadmap-2026.jpeg"
 tags:
   - Web Development
   - Frontend Development

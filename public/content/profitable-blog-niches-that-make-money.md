@@ -4,7 +4,7 @@ description: "Discover the most profitable blog niches that make money in 2026. 
 slug: "profitable-blog-niches-that-make-money"
 author: "CodewithLord"
 date: "2026-01-15"
-image: "/Assets/src/profitable-blog-niches-2026.png"
+image: "/Assets/src/profitable-blog-niches-2026.jpeg"
 tags:
   - Blogging
   - Profitable Niches
