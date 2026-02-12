@@ -53,11 +53,11 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-black text-white font-sans ${geistSans.variable} ${geistMono.variable}`}
       >
-        <ClientLayout>
+        {/* <ClientLayout> */}
           <Navbar />
           {children}
           <Footer />
-        </ClientLayout>
+        {/* </ClientLayout> */}
       </body>
     </html>
   );

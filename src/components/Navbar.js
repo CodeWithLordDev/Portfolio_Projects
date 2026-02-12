@@ -1,6 +1,6 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -16,12 +16,16 @@ export default function Navbar() {
     ["rgba(255, 255, 255, 0.05)", "rgba(255, 255, 255, 0.1)"]
   );
 
+ 
+
   const links = [
     { name: "Home", href: "/", icon: "🏠" },
     { name: "About", href: "/about", icon: "👤" },
     { name: "Components", href: "/components", icon: "🧩" },
     { name: "Blog", href: "/blog", icon: "📝" },
     { name: "Contact", href: "/contact", icon: "📧" },
+    { name: "Services", href: "/services", icon: "" },
+    { name: "Learn", href: "/learn", icon: "" },
   ];
 
   useEffect(() => {
@@ -31,6 +35,8 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+ 
 
   return (
     <>
@@ -80,7 +86,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP LINKS with Active Indicator */}
-        <div className="hidden md:flex gap-1 text-white/80 text-sm font-medium">
+        <div className="hidden md:flex gap-1 text-white/80 text-sm font-medium items-center">
           {links.map((link, i) => {
             const isActive = pathname === link.href;
             return (
@@ -123,16 +129,9 @@ export default function Navbar() {
               </Link>
             );
           })}
-        </div>
 
-        {/* Theme Toggle / Settings Button (Optional) */}
-        {/* <motion.button
-          whileHover={{ scale: 1.1, rotate: 180 }}
-          whileTap={{ scale: 0.9 }}
-          className="hidden md:block w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
-        >
-          ⚙️
-        </motion.button> */}
+          
+        </div>
 
         {/* MOBILE MENU TOGGLE - Animated Hamburger */}
         <motion.button
@@ -228,9 +227,9 @@ export default function Navbar() {
                   </motion.div>
                 );
               })}
-            </div>
 
             
+            </div>
           </motion.div>
         </>
       )}

@@ -137,7 +137,19 @@ export default async function Page({ params }) {
             prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-300 prose-a:transition-colors
             prose-strong:text-white prose-strong:font-semibold
             prose-code:text-cyan-400 prose-code:bg-gray-900/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
-            prose-pre:bg-gray-900/50 prose-pre:border prose-pre:border-gray-800 prose-pre:rounded-xl prose-pre:shadow-2xl
+            prose-pre:!bg-gradient-to-br prose-pre:!from-slate-900 prose-pre:!via-purple-900/20 prose-pre:!to-slate-900
+            prose-pre:!border-2 prose-pre:!border-purple-500/30 
+            prose-pre:!rounded-xl prose-pre:!shadow-2xl prose-pre:!shadow-purple-500/10
+            prose-pre:overflow-x-auto prose-pre:overflow-y-auto 
+            prose-pre:max-h-[600px] prose-pre:w-full
+            prose-pre:scrollbar-thin prose-pre:scrollbar-track-transparent prose-pre:scrollbar-thumb-purple-500/50
+            prose-pre:hover:scrollbar-thumb-purple-500/70
+            prose-pre:relative prose-pre:backdrop-blur-sm
+            [&_pre]:!p-4 [&_pre]:!m-0
+            [&_pre_code]:!bg-transparent [&_pre_code]:!text-gray-100
+            [&_pre]:before:absolute [&_pre]:before:inset-0 [&_pre]:before:bg-gradient-to-r 
+            [&_pre]:before:from-purple-500/5 [&_pre]:before:via-transparent [&_pre]:before:to-blue-500/5
+            [&_pre]:before:rounded-xl [&_pre]:before:pointer-events-none
             prose-blockquote:border-l-4 prose-blockquote:border-purple-500 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-400
             prose-ul:text-gray-300 prose-ol:text-gray-300
             prose-li:my-2
@@ -147,6 +159,7 @@ export default async function Page({ params }) {
         {/* Bottom spacer */}
         <div className="h-24" />
       </div>
+
     </main>
   );
 }
