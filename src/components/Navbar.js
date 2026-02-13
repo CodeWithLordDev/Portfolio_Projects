@@ -1,6 +1,6 @@
 "use client";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -24,8 +24,8 @@ export default function Navbar() {
     { name: "Components", href: "/components", icon: "🧩" },
     { name: "Blog", href: "/blog", icon: "📝" },
     { name: "Contact", href: "/contact", icon: "📧" },
-    { name: "Services", href: "/services", icon: "" },
-    { name: "Learn", href: "/learn", icon: "" },
+    { name: "Services", href: "/services", icon: "🛠️" },
+    { name: "Learn", href: "/learn", icon: "📚" },
   ];
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
         style={{ backgroundColor }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[85%] lg:w-[75%] backdrop-blur-xl border shadow-2xl rounded-2xl px-4 md:px-6 py-3 flex justify-between items-center transition-all duration-300 ${
+        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%] xl:w-[75%] backdrop-blur-xl border shadow-2xl rounded-2xl px-4 md:px-6 py-3 flex justify-between items-center transition-all duration-300 ${
           scrolled
             ? "border-white/30 shadow-purple-500/20"
             : "border-white/20"
@@ -64,7 +64,7 @@ export default function Navbar() {
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-              className="text-xl md:text-2xl font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-400 to-pink-500 bg-[length:200%_auto]"
+              className="text-lg md:text-xl xl:text-2xl font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-400 to-pink-500 bg-[length:200%_auto]"
             >
               CodewithLord
               <motion.span
@@ -86,7 +86,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP LINKS with Active Indicator */}
-        <div className="hidden md:flex gap-1 text-white/80 text-sm font-medium items-center">
+        <div className="hidden xl:flex gap-1 text-white/80 text-sm font-medium items-center">
           {links.map((link, i) => {
             const isActive = pathname === link.href;
             return (
@@ -99,15 +99,12 @@ export default function Navbar() {
                   {/* Background Glow on Hover */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"
-                    layoutId={isActive ? "activeTab" : undefined}
                   />
                   
                   {/* Active Tab Indicator */}
                   {isActive && (
                     <motion.div
-                      layoutId="activeTab"
                       className="absolute inset-0 bg-gradient-to-r from-purple-600/30 to-pink-600/30 rounded-xl"
-                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     />
                   )}
 
@@ -120,9 +117,7 @@ export default function Navbar() {
                   {/* Bottom Border on Active */}
                   {isActive && (
                     <motion.div
-                      layoutId="underline"
                       className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500"
-                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     />
                   )}
                 </motion.div>
@@ -137,7 +132,7 @@ export default function Navbar() {
         <motion.button
           onClick={() => setActive(!active)}
           whileTap={{ scale: 0.9 }}
-          className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
+          className="xl:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
         >
           <motion.span
             animate={active ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
@@ -163,7 +158,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setActive(false)}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 xl:hidden"
           />
 
           {/* Mobile Menu */}
@@ -172,7 +167,7 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] backdrop-blur-2xl border border-white/20 rounded-3xl p-6 z-50 md:hidden shadow-2xl shadow-purple-500/20"
+            className="fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] backdrop-blur-2xl border border-white/20 rounded-3xl p-6 z-50 xl:hidden shadow-2xl shadow-purple-500/20"
           >
             {/* Mobile Menu Header */}
             <div className="text-center mb-6">

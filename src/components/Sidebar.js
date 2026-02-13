@@ -36,9 +36,9 @@ export default function Sidebar({
       <button
         type="button"
         onClick={() => setMobileOpen(true)}
-        className="fixed left-4 top-24 z-30 rounded-xl border border-blue-400/30 bg-blue-600/15 px-4 py-2 text-sm md:hidden"
+        className="fixed left-4 top-24 z-30 rounded-xl border border-blue-400/30 bg-blue-600/15 px-4 py-2 text-sm xl:hidden"
       >
-        Topics
+        ☰ Topics
       </button>
 
       <AnimatePresence>
@@ -47,7 +47,7 @@ export default function Sidebar({
             <motion.button
               type="button"
               aria-label="Close sidebar"
-              className="fixed inset-0 z-40 bg-black/60 md:hidden"
+              className="fixed inset-0 z-40 bg-black/60 xl:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export default function Sidebar({
               animate={{ x: 0 }}
               exit={{ x: -320 }}
               transition={{ duration: 0.24 }}
-              className={`fixed left-0 top-0 z-50 h-full w-80 border-r p-4 md:hidden ${sidebarClass}`}
+              className={`fixed left-0 top-0 z-50 h-full w-80 border-r p-4 xl:hidden ${sidebarClass}`}
             >
               <SidebarContent
                 topics={topics}
@@ -75,7 +75,7 @@ export default function Sidebar({
         )}
       </AnimatePresence>
 
-      <aside className={`sticky top-0 hidden h-screen w-80 border-r p-4 md:block ${sidebarClass}`}>
+      <aside className={`sticky top-0 hidden h-screen w-80 border-r p-4 xl:block ${sidebarClass}`}>
         <SidebarContent
           topics={topics}
           basePath={basePath}

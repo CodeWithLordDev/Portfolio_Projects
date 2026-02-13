@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function BlogLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="bg-black text-white">
+    <>
+      <div className="bg-black text-white">
 
         {/* Google AdSense Script (Only for Blog Pages) */}
         <Script
@@ -24,7 +24,7 @@ export default function BlogLayout({ children }) {
         {/* Render Blog Pages */}
         {children}
 
-      </body>
-    </html>
+      </div>
+    </>
   );
 }

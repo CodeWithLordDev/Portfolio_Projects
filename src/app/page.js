@@ -1,18 +1,32 @@
 "use client";
-import Image from "next/image";
 import Hero from "../components/Hero";
 import About from "./about/page";
-import ParallaxTransition from "../components/ParallaxTransition";
 import Contact from "./contact/page";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { metadata } from "./metadata";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export const metadataConfig = metadata;
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { scrollYProgress } = useScroll();
+  const particles = useMemo(
+    () =>
+      Array.from({ length: 30 }, (_, index) => {
+        const seed = (index * 9301 + 49297) % 233280;
+        const seed2 = (index * 233 + 1741) % 1000;
+        const seed3 = (index * 541 + 719) % 1000;
+
+        return {
+          id: index,
+          left: ((seed / 233280) * 100).toFixed(2),
+          duration: 10 + (seed2 / 100),
+          delay: (seed3 / 200).toFixed(2),
+        };
+      }),
+    []
+  );
 
   // Transform scroll   progress to various values
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
@@ -47,25 +61,25 @@ export default function Home() {
         </motion.div>
 
         {/* Floating Particles Throughout Page */}
-        {[...Array(30)].map((_, i) => (
+        {particles.map((particle) => (
           <motion.div
-            key={i}
+            key={particle.id}
             initial={{
-              x: Math.random() * (typeof window !== "undefined" ? window.innerWidth : 1000),
-              y: typeof window !== "undefined" ? window.innerHeight + Math.random() * 500 : 1000,
+              y: "110vh",
               opacity: 0,
             }}
             animate={{
-              y: -100,
+              y: "-10vh",
               opacity: [0, 0.5, 0],
             }}
             transition={{
-              duration: Math.random() * 10 + 10,
+              duration: particle.duration,
               repeat: Infinity,
-              delay: Math.random() * 5,
+              delay: Number(particle.delay),
               ease: "linear",
             }}
             className="absolute w-1 h-1 bg-purple-400/60 rounded-full"
+            style={{ left: `${particle.left}%` }}
           />
         ))}
 
